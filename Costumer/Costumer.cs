@@ -2,7 +2,7 @@
 
 namespace Costumer
 {
-    public class Class1
+    public class Costumer
     {
     }
 }
