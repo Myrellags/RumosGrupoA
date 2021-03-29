@@ -134,7 +134,7 @@ namespace People
             People people = new People();
             
 
-            //Gravando no batabase
+            //Gravando no database
             try
             {
                 //db.SubmitChanges();
