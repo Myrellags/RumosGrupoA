@@ -156,7 +156,8 @@ namespace People
             emp.EmpName = txtname.Text;
             emp.Location = txtlocation.Text;
             db.EmployeeDetails.InsertOnSubmit(emp);
-            db.SubmitChanges();*/
+            db.SubmitChanges();
+*/
 
 /*----------DELETE
             EmployeeDBDataContext db = new EmployeeDBDataContext();

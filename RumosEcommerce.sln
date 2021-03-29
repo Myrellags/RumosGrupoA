@@ -9,7 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Costumer", "Costumer\Costum
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Provider", "Provider\Provider.csproj", "{1E5170AA-152C-453D-B267-F52EFF681747}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "People", "People\People.csproj", "{A5A1A094-47B5-4DB7-BD8F-7525170B0B84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "People", "People\People.csproj", "{A5A1A094-47B5-4DB7-BD8F-7525170B0B84}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Product", "Product", "{CFD625B4-56A7-4464-B663-E511ADB1837E}"
+	ProjectSection(SolutionItems) = preProject
+		Product.cs = Product.cs
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
