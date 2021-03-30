@@ -61,8 +61,10 @@ namespace Product
 		{
 			get { return _priceSellProduct; }
 			set { _priceSellProduct = value; }
-		}
+}
 		#endregion
+#region "CONSTRUTORES"
+
 
 
 	}
