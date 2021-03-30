@@ -11,16 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Provider", "Provider\Provid
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "People", "People\People.csproj", "{A5A1A094-47B5-4DB7-BD8F-7525170B0B84}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Product", "Product", "{CFD625B4-56A7-4464-B663-E511ADB1837E}"
-	ProjectSection(SolutionItems) = preProject
-		Product.cs = Product.cs
-	EndProjectSection
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quotation", "Quotation\Quotation.csproj", "{09855533-8BBB-46C6-9226-E81FD18B59B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quotation", "Quotation\Quotation.csproj", "{09855533-8BBB-46C6-9226-E81FD18B59B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InputInvoice", "InputInvoice\InputInvoice.csproj", "{9519090D-CD56-4EB1-8D01-872260F18DF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputInvoice", "InputInvoice\InputInvoice.csproj", "{9519090D-CD56-4EB1-8D01-872260F18DF2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PurchaseRequests", "PurchaseRequests\PurchaseRequests.csproj", "{94A46C15-D430-48EE-A3EC-560A2B731836}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PurchaseRequests", "PurchaseRequests\PurchaseRequests.csproj", "{94A46C15-D430-48EE-A3EC-560A2B731836}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
