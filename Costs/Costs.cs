@@ -11,6 +11,6 @@ namespace Costs
         private double _costsProduct;   //private double custoProduto;
         private double _costsOthers;    //private double custosOutros;
         private string _typeOfCosts;    //private string tipoDeCusto;
-        #region
+        #endregion
     }
 }
