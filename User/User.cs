@@ -87,25 +87,7 @@ namespace User
             _nifUser = nifUser;
         }
         #endregion
-        #region "METODOS USER"
-        public void InsertUser()
-        {
-            // Instanciando a classe people
-            User user = new User();
 
-            //Gravando no database
-            try
-            {
-                //db.SubmitChanges();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-                //db.SubmitChanges();
-            }
-
-        }
-        #endregion 
     }
 }
 
