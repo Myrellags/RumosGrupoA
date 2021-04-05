@@ -4,6 +4,7 @@ namespace User
 {
     public class User
     {
+        #region "ATRIBUTOS USER"
         int _idUser;
         string _nameUser;
         string _passUser;
@@ -14,9 +15,8 @@ namespace User
         string _contact1User;
         string _contact2User;
         string _nifUser;
-
+        #endregion
         #region "PROPRIEDADES USER"
-
         public int IdUser
         {
             get { return _idUser; }
@@ -24,7 +24,7 @@ namespace User
         }
         public string NameUser
         {
-            get { return _nameUser ; }
+            get { return _nameUser; }
             set { _nameUser = value; }
         }
         public string PassUser
@@ -36,6 +36,11 @@ namespace User
         {
             get { return _emailUser; }
             set { _emailUser = value; }
+        }
+        public string SubName
+        {
+            get { return _subnameUser; }
+            set { _subnameUser = value; }
         }
         public string AdressUser
         {
@@ -63,7 +68,44 @@ namespace User
             set { _nifUser = value; }
         }
         #endregion
+        #region "CONSTRUTORES USER"
+        public User()
+        {
 
+        }
+        public User(int idUser, string nameUser, string passUser, string emailUser, string subnameUser, string countryUser, string adressUser, string contact1User, string contact2User, string nifUser)
+        {
+            _idUser = idUser;
+            _nameUser = nameUser;
+            _passUser = passUser;
+            _emailUser = emailUser;
+            _subnameUser = subnameUser;
+            _adressUser = adressUser;
+            _countryUser = countryUser;
+            _contact1User = contact1User;
+            _contact2User = contact2User;
+            _nifUser = nifUser;
+        }
+        #endregion
+        #region "METODOS USER"
+        public void InsertUser()
+        {
+            // Instanciando a classe people
+            User user = new User();
 
+            //Gravando no database
+            try
+            {
+                //db.SubmitChanges();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                //db.SubmitChanges();
+            }
+
+        }
+        #endregion 
     }
 }
+
