@@ -46,17 +46,19 @@ namespace UnlockedStocks
 	}
 
 	#endregion
+
 	#region "Construtores"
 
-public Product(string idProduct, int quantidade, float precosemiva, float precocomiva, string local)
-{
+	public Product(string idProduct, int quantidade, float precosemiva, float precocomiva, string local)
+	
+	{
 	_idProduct = idProduct;
 	_quantidade = quantidade;
 	_precosemiva = precosemiva;
 	_precocomiva = precocomiva;
 	_local = local;
-}
-#endregion
-}
+	}
+	#endregion
+	}
 	
 }
