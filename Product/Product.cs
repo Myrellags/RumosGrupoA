@@ -5,15 +5,18 @@ namespace Product
 	public class Product
 	{
 		#region "ATRIBUTOS PRODUCT"
-		private int _idProduct;
+		private int _idProduct; 
 		private string _nameProduct;
 		private string _descriptionProduct;
 		private string _typeProduct;
+		private string _categoryProduct;
 		private double _weightProduct;
-		private string _providerProduct;
-		private bool _discontinuedProduct;
+		private string _warehouseProduct;
 		private double _pricePurchaseProduct;
 		private double _priceSellProduct;
+		private bool _discontinuedProduct;
+		private string _delete;
+
 		#endregion
 
 		#region "PROPRIEDADES PRODUCT"
@@ -44,8 +47,8 @@ namespace Product
 		}
 		public string ProviderProduct
 		{
-			get { return _providerProduct; }
-			set { _providerProduct = value; }
+			get { return _warehouseProduct; }
+			set { _warehouseProduct = value; }
 		}
 		public bool DiscontinuedProduct
 		{
@@ -62,25 +65,38 @@ namespace Product
 			get { return _priceSellProduct; }
 			set { _priceSellProduct = value; }
 		}
+		public string CategoryProduct
+		{
+			get { return _categoryProduct; }
+			set { _categoryProduct = value; }
+		}
+		public string Delete 
+		{
+			get { return _delete; }
+			set { _delete = value; }
+		}
+
 		#endregion
 		#region "CONTRUTORES"
 		public Product()
         {
 
         }
-		public Product(int idProduct, string nameProduct, string descriptionProduct, string typeProduct, double weightProduct, string providerProduct, bool discontinuedProduct, double pricePurchaseProduct, double priceSellProduct)
+		public Product(string delete, string categoryProduct,  int idProduct, string nameProduct, string descriptionProduct, string typeProduct, double weightProduct, string warehouseProduct, bool discontinuedProduct, double pricePurchaseProduct, double priceSellProduct)
 		{
 			_idProduct = idProduct;
 			_nameProduct = nameProduct;
 			_descriptionProduct = descriptionProduct;
 			_typeProduct = typeProduct;
 			_weightProduct = weightProduct;
-		_providerProduct = providerProduct;
+		_warehouseProduct = warehouseProduct;
 		_discontinuedProduct = discontinuedProduct;
 			_pricePurchaseProduct = pricePurchaseProduct;
 			_priceSellProduct = priceSellProduct;
+			_categoryProduct = categoryProduct;
+			_delete = delete;
 
-	}
+	    }
 		#endregion
 
 	}
