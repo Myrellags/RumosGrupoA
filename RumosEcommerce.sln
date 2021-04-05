@@ -49,6 +49,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{2C346EEB
 		EcommerceContext.cs = EcommerceContext.cs
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnlockedStock", "Unlocked Stock\UnlockedStock.csproj", "{FB99D86D-6129-487E-8768-A8F679D7FDB7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -119,6 +121,10 @@ Global
 		{AB4F9509-301C-41FA-ACA6-2B6E84763103}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB4F9509-301C-41FA-ACA6-2B6E84763103}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB4F9509-301C-41FA-ACA6-2B6E84763103}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB99D86D-6129-487E-8768-A8F679D7FDB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB99D86D-6129-487E-8768-A8F679D7FDB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB99D86D-6129-487E-8768-A8F679D7FDB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB99D86D-6129-487E-8768-A8F679D7FDB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -140,6 +146,7 @@ Global
 		{0E0B921B-A1A6-4482-99CD-BACD48508FC1} = {6E141223-1913-4C9A-B5CC-76B0863EDE1F}
 		{3E55F1E4-0954-4C21-A677-A82ABD4C910F} = {6E141223-1913-4C9A-B5CC-76B0863EDE1F}
 		{AB4F9509-301C-41FA-ACA6-2B6E84763103} = {6E141223-1913-4C9A-B5CC-76B0863EDE1F}
+		{FB99D86D-6129-487E-8768-A8F679D7FDB7} = {6E141223-1913-4C9A-B5CC-76B0863EDE1F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8FD4867A-F225-4268-B28E-BDAAA33D8D6D}
