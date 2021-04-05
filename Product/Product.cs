@@ -18,7 +18,6 @@ namespace Product
 		private string _delete;
 
 		#endregion
-
 		#region "PROPRIEDADES PRODUCT"
 		public int IdProduct
 		{
@@ -45,7 +44,7 @@ namespace Product
 			get { return _weightProduct; }
 			set { _weightProduct = value; }
 		}
-		public string ProviderProduct
+		public string WarehouseProduct
 		{
 			get { return _warehouseProduct; }
 			set { _warehouseProduct = value; }
@@ -95,7 +94,6 @@ namespace Product
 			_priceSellProduct = priceSellProduct;
 			_categoryProduct = categoryProduct;
 			_delete = delete;
-
 	    }
 		#endregion
 
