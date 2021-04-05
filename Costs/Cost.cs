@@ -2,7 +2,7 @@
 
 namespace Costs
 {
-    public class Costs
+    public class Cost
     {
         #region "Atributos"
         private double _creditProvider; //private double creditoFornecedores;

@@ -2,7 +2,7 @@
 
 namespace PaymentWays
 {
-    public class PaymentWays
+    public class PaymentWay
     {
         #region "Atributos"
         private int _idPaymentWay;       //private int idCondicaoPagamento;

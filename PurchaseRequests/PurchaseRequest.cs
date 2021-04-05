@@ -2,7 +2,7 @@
 
 namespace PurchaseRequests
 {
-    public class PurchaseRequests
+    public class PurchaseRequest
     {
         #region "Atributos"
         private int _idQuotatio;          //private int idOrcamento;
