@@ -40,6 +40,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAO", "DAO", "{C7003B6E-DF96-4EA0-A910-1D6AE986673D}"
 	ProjectSection(SolutionItems) = preProject
 		ProductDAO.cs = ProductDAO.cs
+		QuotationDAO.cs = QuotationDAO.cs
 		UserDAO.cs = UserDAO.cs
 	EndProjectSection
 EndProject

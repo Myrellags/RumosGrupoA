@@ -8,9 +8,9 @@ public class ProductDAO
     {
         this.contexto = contexto;
     }
-    public IList<Post> Lista()
+    public IList<Product> Lista()
     {
-        var lista = contexto.Posts.ToList();
+        var lista = contexto.Product.ToList();
         return lista;
     }
     //Cria um novo produto(adiciona, salva..)

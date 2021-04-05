@@ -75,8 +75,8 @@ namespace Product
 			_descriptionProduct = descriptionProduct;
 			_typeProduct = typeProduct;
 			_weightProduct = weightProduct;
-		_providerProduct = providerProduct;
-		_discontinuedProduct = discontinuedProduct;
+			_providerProduct = providerProduct;
+			_discontinuedProduct = discontinuedProduct;
 			_pricePurchaseProduct = pricePurchaseProduct;
 			_priceSellProduct = priceSellProduct;
 
