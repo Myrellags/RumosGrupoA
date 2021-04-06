@@ -5,38 +5,38 @@ namespace People
     public class People
     {
         #region "atributos"
-        private int _idPessoa;
-        private int _idUsuario;
-        private string _apelido;
-        private string _site;
-        private string _NIF;
-        private string _CC;
-        private string _observacao;
-        private string _logradouro;
-        private string _numero;
-        private string _bairro;
-        private string _cidade;
-        private string _pais;
-        private string _codigoPostal;
-        private string _redeSociais;
-        private string _telemovel;
+        private int _idPeople;       //private int _idPessoa;
+        private int _idUser;         //private int _idUsuario;
+        private string _surname;     //private string _apelido;
+        private string _site;        //private string _site;
+        private string _NIF;         //private string _NIF;
+        private string _CC;          //private string _CC;
+        private string _note;        //private string _observacao;
+        private string _address;     //private string _logradouro;
+        private string _number;      //private string _numero;
+        private string _district;    //private string _bairro;
+        private string _city;        //private string _cidade;
+        private string _country;     //private string _pais;
+        private string _postalCode;  //private string _codigoPostal;
+        private string _socialMidia; //private string _redeSociais;
+        private string _cellPhone;   //private string _telemovel;
         #endregion
 
         #region "propriedades"
-        public int IdPessoa
+        public int IdPeople
         {
-            get { return _idPessoa; }
-            set { _idPessoa = value; }
+            get { return _idPeople; }
+            set { _idPeople = value; }
         }
-        public int IdUsuario
+        public int IdUser
         {
-            get { return _idUsuario; }
-            set { _idUsuario = value; }
+            get { return _idUser; }
+            set { _idUser = value; }
         }
-        public string Apelido
+        public string Surname
         {
-            get { return _apelido; }
-            set { _apelido = value; }
+            get { return _surname; }
+            set { _surname = value; }
         }
         public string Site
         {
@@ -53,50 +53,49 @@ namespace People
             get { return _CC; }
             set { _CC = value; }
         }
-        public string Obeservacao
-        {
-            get { return _observacao; }
-            set { _observacao = value; }
+        public string Note        {
+            get { return _note; }
+            set { _note = value; }
         }
-        public string Logradouro
+        public string Address
         {
-            get { return _logradouro; }
-            set { _logradouro = value; }
+            get { return _address; }
+            set { _address = value; }
         }
-        public string Numero
+        public string Number
         {
-            get { return _numero; }
-            set { _numero = value; }
+            get { return _number; }
+            set { _number = value; }
         }
-        public string Bairro
+        public string District
         {
-            get { return _bairro; }
-            set { _bairro = value; }
+            get { return _district; }
+            set { _district = value; }
         }
-        public string Cidade
+        public string City
         {
-            get { return _cidade; }
-            set { _cidade = value; }
+            get { return _city; }
+            set { _city = value; }
         }
-        public string Pais
+        public string Country
         {
-            get { return _pais; }
-            set { _pais = value; }
+            get { return _country; }
+            set { _country = value; }
         }
-        public string CodigoPostal
+        public string PostalCode
         {
-            get { return _codigoPostal; }
-            set { _codigoPostal = value; }
+            get { return _postalCode; }
+            set { _postalCode = value; }
         }
-        public string RedesSociais
+        public string SocialMidia
         {
-            get { return _redeSociais; }
-            set { _redeSociais = value; }
+            get { return _socialMidia; }
+            set { _socialMidia = value; }
         }
-        public string Telemovel
+        public string CellPhone
         {
-            get { return _telemovel; }
-            set { _telemovel = value; }
+            get { return _cellPhone; }
+            set { _cellPhone = value; }
         }
         #endregion
 
@@ -105,25 +104,25 @@ namespace People
         {
 
         }
-        public People(int idPessoa, int idUsuario, string apelido, string site, string NIF, string CC, string observacao,
-                        string logradouro, string numero, string bairro, string cidade, string pais, string codigoPostal,
-                        string redeSociais, string telemovel)
+        public People(int idPeople, int idUser, string surname, string site, string NIF, string CC, string note,
+                        string address, string number, string district, string city, string country, string postalCode,
+                        string socialMidia, string cellPhone)
         {
-            _idPessoa = idPessoa;
-            _idUsuario = idUsuario;
-            _apelido = apelido;
+            _idPeople = idPeople;
+            _idUser = idUser;
+            _surname = surname;
             _site = site;
             _NIF = NIF;
             _CC = CC;
-            _observacao = observacao;
-            _logradouro = logradouro;
-            _numero = numero;
-            _bairro = bairro;
-            _cidade = cidade;
-            _pais = pais;
-            _codigoPostal = codigoPostal;
-            _redeSociais = redeSociais;
-            _telemovel = telemovel;
+            _note = note;
+            _address = address;
+            _number = number;
+            _district = district;
+            _city = city;
+            _country = country;
+            _postalCode = postalCode;
+            _socialMidia = socialMidia;
+            _cellPhone = cellPhone;
         }
         #endregion
 

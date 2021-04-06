@@ -21,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Product", "Product\Product.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderNotes", "OrderNotes\OrderNotes.csproj", "{AC59D18C-598C-43CD-A4B2-BA59513A7BBB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaymentWays", "PaymentWays\PaymentWays.csproj", "{DABE033B-1FC2-4A41-9881-0CC9E818DF50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MethodOfPayment", "PaymentWays\MethodOfPayment.csproj", "{DABE033B-1FC2-4A41-9881-0CC9E818DF50}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductCategory", "ProductCategory\ProductCategory.csproj", "{16F932E0-1539-4817-9775-EB9C581C6C80}"
 EndProject
@@ -39,6 +39,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{6E1412
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAO", "DAO", "{C7003B6E-DF96-4EA0-A910-1D6AE986673D}"
 	ProjectSection(SolutionItems) = preProject
+		InputInvoiceDAO.cs = InputInvoiceDAO.cs
 		ProductDAO.cs = ProductDAO.cs
 		QuotationDAO.cs = QuotationDAO.cs
 		UserDAO.cs = UserDAO.cs
@@ -57,7 +58,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Order", "Order\Order.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Category", "Category\Category.csproj", "{BDE3E101-19E2-4966-85A1-5F3B1B9CC578}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingCar", "ShoppingCar\ShoppingCar.csproj", "{E1309D0D-1B67-4A3A-A8AC-00AD883F5E2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCar", "ShoppingCar\ShoppingCar.csproj", "{E1309D0D-1B67-4A3A-A8AC-00AD883F5E2E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
