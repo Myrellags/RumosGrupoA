@@ -2,7 +2,7 @@
 
 namespace ProductCategory
 {
-    public enum typeC
+    public enum typeC     // myrella nao entendo este conceito, pq class enum aqui? ass roger 
     {
         Cozinha,
         Cama,
