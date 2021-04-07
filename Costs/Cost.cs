@@ -5,8 +5,6 @@ namespace Costs
     public class Cost
     {
         #region "Atributos"
-        private double _creditProvider; //private double creditoFornecedores;
-        private double _creditClient;   //private double creditoClientes;
         private double _costsProvider;  //private double custosFornecedores;
         private double _costsProduct;   //private double custoProduto;
         private double _costsOthers;    //private double custosOutros;
@@ -15,18 +13,6 @@ namespace Costs
     
 
     #region "Propriedades"
-
-    public double creditProvider
-    {
-        get { return _creditProvider; }
-        set { _creditProvider = value; }
-    }
-
-    public double creditClient
-    {
-        get { return _creditClient; }
-        set { _creditClient = value; }
-    }
 
     public double costsProvider
     {
