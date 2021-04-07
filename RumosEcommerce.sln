@@ -42,6 +42,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAO", "DAO", "{C7003B6E-DF9
 		InputInvoiceDAO.cs = InputInvoiceDAO.cs
 		ProductDAO.cs = ProductDAO.cs
 		QuotationDAO.cs = QuotationDAO.cs
+		SalesPriceDAO.cs = SalesPriceDAO.cs
 		UserDAO.cs = UserDAO.cs
 	EndProjectSection
 EndProject
@@ -59,6 +60,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Category", "Category\Category.csproj", "{BDE3E101-19E2-4966-85A1-5F3B1B9CC578}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCar", "ShoppingCar\ShoppingCar.csproj", "{E1309D0D-1B67-4A3A-A8AC-00AD883F5E2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesPrice", "SalesPrice\SalesPrice.csproj", "{F44C6FFA-B425-4EE6-85E9-877165B8D78D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -146,6 +149,10 @@ Global
 		{E1309D0D-1B67-4A3A-A8AC-00AD883F5E2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1309D0D-1B67-4A3A-A8AC-00AD883F5E2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1309D0D-1B67-4A3A-A8AC-00AD883F5E2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F44C6FFA-B425-4EE6-85E9-877165B8D78D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F44C6FFA-B425-4EE6-85E9-877165B8D78D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F44C6FFA-B425-4EE6-85E9-877165B8D78D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F44C6FFA-B425-4EE6-85E9-877165B8D78D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -171,6 +178,7 @@ Global
 		{7E368F85-664A-4E5D-BC75-4A7D6BDBA64A} = {6E141223-1913-4C9A-B5CC-76B0863EDE1F}
 		{BDE3E101-19E2-4966-85A1-5F3B1B9CC578} = {6E141223-1913-4C9A-B5CC-76B0863EDE1F}
 		{E1309D0D-1B67-4A3A-A8AC-00AD883F5E2E} = {6E141223-1913-4C9A-B5CC-76B0863EDE1F}
+		{F44C6FFA-B425-4EE6-85E9-877165B8D78D} = {6E141223-1913-4C9A-B5CC-76B0863EDE1F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8FD4867A-F225-4268-B28E-BDAAA33D8D6D}

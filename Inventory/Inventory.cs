@@ -13,7 +13,7 @@ namespace Inventory
         #endregion
 
 
-        #region "Porpriedades"
+        #region "PROPRIEDADES INVENTORY"
 
         public int idProduct
         {

@@ -5,17 +5,17 @@ namespace Product
 	public class Product
 	{
 		#region "ATRIBUTOS PRODUCT"
-		private int _idProduct; 
-		private string _nameProduct;
-		private string _descriptionProduct;
-		private string _typeProduct;
-		private string _categoryProduct;
-		private double _weightProduct;
-		private string _warehouseProduct;
-		private double _pricePurchaseProduct;
-		private double _priceSellProduct;
-		private bool _discontinuedProduct;
-		private string _delete;
+		private int _idProduct;  // ID DO PRODUTO 
+		private string _nameProduct; // NOME DO PRODUTO
+		private string _descriptionProduct; // DESCRIÇÃO DO PRODUTO
+		private string _typeProduct; // TIPO DE PRODUTO
+		private string _categoryProduct; // CATEGORIA DO PRODUTO
+		private double _weightProduct;  // PESO DO PRODUTO
+		private string _warehouseProduct;  // ARMAZEM DE ORIGEM
+		private double _pricePurchaseProduct; // PRECO DE COMPRA DO PRODUTO
+		private double _priceSellProduct;  // PRECO DE VENDA DO PRODUTO
+		private bool _discontinuedProduct; // PRODUTO DESCONTINUADO 
+		private string _delete; // FALAR COM MYRELLA (CONCEITO DE DELETE SEM APAGAR)
 
 		#endregion
 		#region "PROPRIEDADES PRODUCT"
