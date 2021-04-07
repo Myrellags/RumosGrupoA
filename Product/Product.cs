@@ -76,7 +76,7 @@ namespace Product
 		}
 
 		#endregion
-		#region "CONTRUTORES"
+		#region "CONTRUTORES PRODUCT"
 		public Product()
         {
 
@@ -88,13 +88,13 @@ namespace Product
 			_descriptionProduct = descriptionProduct;
 			_typeProduct = typeProduct;
 			_weightProduct = weightProduct;
-		_providerProduct = providerProduct;
 		_discontinuedProduct = discontinuedProduct;
 			_pricePurchaseProduct = pricePurchaseProduct;
 			_priceSellProduct = priceSellProduct;
 			_categoryProduct = categoryProduct;
 			_delete = delete;
-	    }
+			_warehouseProduct = warehouseProduct;
+		}
 		#endregion
 
 	}
