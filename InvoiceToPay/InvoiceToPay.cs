@@ -2,7 +2,7 @@
 
 namespace InvoiceToPay
 {
-    public class InvoiceToPay
+    public class InvoiceToPay // CONTAS A PAGAR
     {
         #region "Atributos"
         private int _idII;    //private int idNE;

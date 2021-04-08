@@ -6,7 +6,7 @@ namespace SalesPrice
     {
         #region "ATRIBUTOS SALESPRICE"
         private double _pricePurchaseProduct; // PREÇO DE COMPRA DO PRODUTO
-        private double _priceSellProduct; // PREÇO DE VENDA DO PRODUTo
+        private double _priceSellProduct; // PREÇO DE VENDA DO PRODUTO
         private double _costsProvider;  //private double custosFornecedores;
         private double _costsProduct;   //private double custoProduto;
         private double _costsOthers;    //private double custosOutros;

@@ -2,7 +2,7 @@
 
 namespace InputInvoice
 {
-    public class InputInvoice
+    public class InputInvoice // notas de encomenda 
     {
         #region "Atributos"
         private int _idII;                  //private int idNE;
