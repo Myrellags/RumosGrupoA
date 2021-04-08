@@ -15,7 +15,7 @@ namespace SalesPrice
         #endregion
 
 
-        #region "Propriedades"
+        #region "Propriedades SALESPRICE"
         public double PurchaseProduct
         {
             get { return _pricePurchaseProduct; }
@@ -53,6 +53,21 @@ namespace SalesPrice
         {
             get { return _delete; }
             set { _delete = value; }
+        }
+        #endregion
+        #region "CONSTRUTORES SALESPRICE"
+        public SalesPrice()
+        {
+
+        }
+        public SalesPrice(double pricePurchaseProduct, double priceSellProduct, double costsProvider, double costsOthers, string typeOfCosts, string delete )
+        {
+            _pricePurchaseProduct = pricePurchaseProduct;
+            _priceSellProduct = priceSellProduct;
+            _costsProvider = costsProvider;
+            _costsOthers = costsOthers;
+            _typeOfCosts = typeOfCosts;
+            _delete = delete;
         }
         #endregion
     }

@@ -43,8 +43,21 @@ namespace Inventory
             get { return _newQuantity; }
             set { _newQuantity = value; }
         }
-
-
         #endregion
+        #region "CONTRUTORES INVENTORY"
+        public Inventory()
+        {
+
+        }
+        public Inventory(int idProduct, int idWarehouse, string productDescription, string nameInventory,int newQuantity)
+        {
+            _idProduct = idProduct;
+            _idWarehouse = idWarehouse;
+            _productDescription = productDescription;
+            _nameInventory = nameInventory;
+            _newQuantity = newQuantity;
+        }
+        #endregion
+
     }
 }
