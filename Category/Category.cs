@@ -9,11 +9,9 @@ namespace Order
     {
 
         #region "Atributos"
-
         private string _idCategoria; //private string idCategoria
         private string _nomeCategoria; //private string nomeCategoria
-    
-    #endregion
+        #endregion
 
     #region "Propriedades"
 

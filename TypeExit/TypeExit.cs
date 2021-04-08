@@ -15,7 +15,7 @@ namespace TypeExit
         #region "atributos"
         private int _idProduct;   //private int idProduto;
         private int _idStorage;   //private int idArmazem;
-        private TE _typeExit; //private string tipoSaida;
+        private TE _typeExit;     //private string tipoSaida;
         #endregion
     }
 }

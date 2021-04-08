@@ -6,7 +6,7 @@ namespace Inventory
     {
         #region "atributos"
         private int _idProduct;             //private int idProduto;
-        private int _idStorage;             //private int idArmazem;
+        private int _idWarehouse;           //private int idArmazem;
         private string _productDescription; //private string descricaoProduto;
         private string _nameInventory;      //private string nomeInventario;
         private int _newQuantity;           //private int novaQuantidade;
@@ -21,10 +21,10 @@ namespace Inventory
             set { _idProduct = value; }
         }
 
-        public int idStorage
+        public int IdWarehouse
         {
-            get { return _idStorage; }
-            set { _idStorage = value; }
+            get { return _idWarehouse; }
+            set { _idWarehouse = value; }
         }
 
         public string productDescription
