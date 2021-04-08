@@ -4,7 +4,7 @@ namespace OrderNotes
 {
     public class OderNotes
     {
-        #region "Atriutos"
+        #region "Atributos"
         private int _idON;                  //private int idNE;
         private int _idProvider;            //private int idFornecedor;
         private string _numberON;           //private string numeroNE;

@@ -63,6 +63,25 @@ namespace Order
 
 
         #endregion
+
+        #region "Construtores"
+        public Order()
+        {
+
+        }
+
+        public Order (string idOrder, string idShoppingCar, string idClient, bool orcamentoPedido, string delete, string cupomDesconto, string status)
+        {
+            _idOrder = idOrder;
+            _idShoppingCar = idShoppingCar;
+            _idClient = idClient;
+            _orcamentoPedido = orcamentoPedido;
+            _delete = delete;
+            _cupomDesconto = cupomDesconto;
+            _status = status;
+          }
+
+        #endregion
     }
 }
 

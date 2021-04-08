@@ -30,5 +30,41 @@ namespace Costumer
         }
 
         #endregion
+
+
+        #region "Construtores"
+        public Costumer()
+        {
+
+        }
+
+        public Costumer(int idCostumer, int idPeople, string delete)
+        {
+            _idCostumer = idCostumer;
+            _idPeople = idPeople;
+            _delete = delete;
+        }
+        #endregion
+
+        #region"Métodos"
+
+        public void InsereCostumer()
+        {
+            // Instanciando a classe people
+            Costumer costumer = new Costumer();
+
+            //Gravando no database
+            try
+            {
+                //db.SubmitChanges();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                //db.SubmitChanges();
+            }
+
+            #endregion
+        }
     }
 }
