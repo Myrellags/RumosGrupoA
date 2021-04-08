@@ -6,7 +6,7 @@ namespace Warehouse
     {
         #region "Atributos"
         private string _idWarehouse; //private string _idArmazem
-        private string _descritionWarehouse; //private string _descricaoArmazem
+        private string _descriptionWarehouse; //private string _descricaoArmazem
         #endregion
 
         #region "Propriedades"
@@ -19,8 +19,8 @@ namespace Warehouse
 
         public string DescriptionWarehouse
         {
-            get { return _descritionWarehouse; }
-            set { _descritionWarehouse = value; }
+            get { return _descriptionWarehouse; }
+            set { _descriptionWarehouse = value; }
         }
 
         #endregion
@@ -34,7 +34,7 @@ namespace Warehouse
         public Warehouse(string idWarehouse, string descriptionWarehouse)
         {
             _idWarehouse = idWarehouse;
-            _descritionWarehouse = descriptionWarehouse;
+            _descriptionWarehouse = descriptionWarehouse;
         }
         #endregion
     }
