@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TypeExit
+namespace Stock
 {
     public enum TE
     {

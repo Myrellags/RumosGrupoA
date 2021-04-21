@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PurchaseRequests
+namespace Purchase
 {
     public class PurchaseRequest
     {

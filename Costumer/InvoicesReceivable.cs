@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace InvoicesReceivable
+namespace Billing
 {
     public class InvoicesReceivable // Pedidos de Venda 
     {
@@ -13,8 +13,10 @@ namespace InvoicesReceivable
         private int _amountProduct; // quantidade de produto
         private double _priceProduct; // preço do produto
         private double _weightProduct; // _pesoProduto;
-        private string _delete; //int    idMethodOfPayment, string amountProduct, string priceProduct, string weightProduct,
-        // string address, string number
+        private string _delete; //int    
+        private double _discountCoupon; //private string cupomDesconto
+        private string _status;        //private string status
+
         #endregion
 
         #region "PROPRIEDADES PEDIDOS DE VENDA" 
@@ -64,6 +66,18 @@ namespace InvoicesReceivable
             set { _delete = value; }
         }
 
+        public double DiscountCoupon
+        {
+            get { return _discountCoupon; }
+            set { _discountCoupon = value; }
+        }
+
+        public string Status
+        {
+            get { return _status; }
+            set { _status = value; }
+        }
+
         #endregion
 
         #region "construtores PEDIDOS DE VENDA"
@@ -72,7 +86,7 @@ namespace InvoicesReceivable
 
         }
         public InvoicesReceivable(int idInvoicesReceivable, int idCustomer, int idProduct, int idShoppingCar, int idMethodOfPayment, int amountProduct, double priceProduct, double weightProduct,
-                        string address)
+                        string delete, double discountCoupon, string status)
         {
             _idInvoicesReceivable = idInvoicesReceivable;
             _idCustomer = idCustomer;
@@ -82,7 +96,9 @@ namespace InvoicesReceivable
             _amountProduct = amountProduct;
             _priceProduct = priceProduct;
             _weightProduct = weightProduct;
-            _delete = address;
+            _delete = delete;
+            _discountCoupon = discountCoupon;
+            _status = status;
          
         }
         #endregion

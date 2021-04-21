@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Costumer
+namespace Billing
 {
     public class Costumer
     {

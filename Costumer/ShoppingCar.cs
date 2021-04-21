@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ShoppingCar
+namespace Billing
 {
     public class ShoppingCar
     {

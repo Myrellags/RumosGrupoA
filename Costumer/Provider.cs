@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Provider
+namespace Billing
 {
     public class Provider
     {

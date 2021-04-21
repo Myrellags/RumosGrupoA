@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MethodOfPayment
+namespace Purchase
 {
     public class MethodOfPayment
     {

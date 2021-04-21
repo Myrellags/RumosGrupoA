@@ -1,13 +1,13 @@
 ﻿using System;
 
-namespace User
+namespace Personal
 {
     public class User
     {
         #region "ATRIBUTOS USER" 
         private int _idUser;
-        private int _idPeople;
-        private string  _passUser;
+        private int _idPerson;
+        private string _passUser;
         
 
         #endregion
@@ -17,10 +17,10 @@ namespace User
             get { return _idUser; }
             set { _idUser = value; }
         }
-        public int idPeople
+        public int idPerson
         {
-            get { return _idPeople; }
-            set { _idPeople = value; }
+            get { return _idPerson; }
+            set { _idPerson = value; }
         }
         public string PassUser
         {
@@ -34,10 +34,10 @@ namespace User
         {
 
         }
-        public User(int idUser, int idPeople, string passUser)
+        public User(int idUser, int idPerson, string passUser)
         {
             _idUser = idUser;
-            _idPeople = idPeople;
+            _idPerson = idPerson;
             _passUser = passUser;
         }
         #endregion

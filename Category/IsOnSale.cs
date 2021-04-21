@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace IsOnSale
+namespace Stock
 {
     public class IsOnSale
     {

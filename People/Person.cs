@@ -1,11 +1,11 @@
 ﻿using System;
 
-namespace People
+namespace Personal
 {
-    public class People
+    public class Person
     {
         #region "atributos"
-        private int _idPeople;       //private int _idPessoa;
+        private int _idPerson;       //private int _idPessoa;
         private int _idUser;         //private int _idUsuario;
         private string _surname;     //private string _apelido;
         private string _site;        //private string _site;
@@ -23,10 +23,10 @@ namespace People
         #endregion
 
         #region "propriedades"
-        public int IdPeople
+        public int IdPerson
         {
-            get { return _idPeople; }
-            set { _idPeople = value; }
+            get { return _idPerson; }
+            set { _idPerson = value; }
         }
         public int IdUser
         {
@@ -100,15 +100,15 @@ namespace People
         #endregion
 
         #region "construtores"
-        public People()
+        public Person()
         {
 
         }
-        public People(int idPeople, int idUser, string surname, string site, string NIF, string CC, string note,
+        public Person(int idPerson, int idUser, string surname, string site, string NIF, string CC, string note,
                         string address, string number, string district, string city, string country, string postalCode,
                         string socialMidia, string cellPhone)
         {
-            _idPeople = idPeople;
+            _idPerson = idPerson;
             _idUser = idUser;
             _surname = surname;
             _site = site;
@@ -130,7 +130,7 @@ namespace People
         public void InserePessoa()
         {
             // Instanciando a classe people
-            People people = new People();
+            Person people = new Person();
             
 
             //Gravando no database

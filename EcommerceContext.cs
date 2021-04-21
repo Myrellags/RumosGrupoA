@@ -2,21 +2,37 @@
 
 public class EcommerceContext : DBContext
 {
-	public EcommerceContext(DbContextOptions<EcommerceContext> options) : base(options) { }
-	public DbSet<Cost> Costs { get; set; }
-	public DbSet<Costumer> Costumers { get; set; }
-	public DbSet<InputInvoice> InputInvoices { get; set; }
-	public DbSet<Inventory> Inventorys { get; set; }
-	public DbSet<OrderNote> OrderNotes { get; set; }
-	public DbSet<PaymentWay> PaymentWays { get; set; }
-	public DbSet<People> Peoples { get; set; }
-	public DbSet<Product> Products { get; set; }
-	public DbSet<ProductCategory> ProductCategorys { get; set; }
-	public DbSet<Provider> Provides { get; set; }
-	public DbSet<PurchaseRequest> PurchaseRequests { get; set; }
-	public DbSet<Quotation> Quotations { get; set; }
-	public DbSet<SalesOrder> SalesOrder { get; set; }
-	public DbSet<TypeExit> TypeExit { get; set; }
-	public DbSet<User> Users { get; set; }		
+    #region "Mapeando as tabelas do BD através das classes"
 
+    public DbSet<InvoiceToPay> InvoiceToPays { get; set; }
+	public DbSet<InvoiceToReceive> InvoiceToReceive { get; set; }
+	public DbSet<Costumer> Costumers { get; set; }
+	public DbSet<InvoiceOrder> InvoiceOrders { get; set; }
+	public DbSet<InvoicesReceivable> InvoicesReceivables { get; set; }
+	public DbSet<Provider> Providers { get; set; }
+	public DbSet<SendOrder> SendOrders { get; set; }
+	public DbSet<ShoppingCar> ShoppingCars { get; set; }
+	public DbSet<UnlockedStock> UnlockedStocks { get; set; }
+	public DbSet<Person> People { get; set; }
+	public DbSet<User> Users { get; set; }
+	public DbSet<Category> Categorys { get; set; }
+	public DbSet<Inventory> Inventorys { get; set; }
+	public DbSet<IsOnSale> IsOnSales { get; set; }
+	public DbSet<Product> Products { get; set; }
+	public DbSet<SalesPrice> SalesPrices { get; set; }
+	public DbSet<TypeExit> TypeExits { get; set; }
+	public DbSet<Warehouse> Warehouses { get; set; }
+	public DbSet<Quotation> Quotations { get; set; }
+	public DbSet<PurchaseRequest> PurchaseRequests { get; set; }
+	public DbSet<MethodOfPayment> MethodOfPayments { get; set; }
+	public DbSet<InputInvoice> InputInvoices { get; set; }
+
+    #endregion
+
+    #region "Conexão"
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+	{
+		optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=BDEcommerce;Trusted_Connection=True;");
+	}
+    #endregion
 }

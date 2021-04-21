@@ -3,7 +3,7 @@
 /// <summary>
 /// Summary description for Class1
 /// </summary>
-namespace Order
+namespace Stock
 {
     public class Category
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Quotation
+namespace Purchase
 {
     public class Quotation
     {

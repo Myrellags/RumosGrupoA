@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Inventory
+namespace Stock
 {
     public class Inventory
     {

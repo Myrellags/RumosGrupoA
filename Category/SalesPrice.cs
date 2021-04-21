@@ -2,15 +2,15 @@
 
 namespace SalesPrice
 {
-    public class SalesPrice
+    public class Stock
     {
         #region "ATRIBUTOS SALESPRICE"
-        private double _pricePurchaseProduct; // PREÇO DE COMPRA DO PRODUTO
-        private double _priceSellProduct; // PREÇO DE VENDA DO PRODUTO
-        private double _costsProvider;  //private double custosFornecedores;
-        private double _costsProduct;   //private double custoProduto;
-        private double _costsOthers;    //private double custosOutros;
-        private string _typeOfCosts;    //private string tipoDeCusto;
+        private int _idProduto;                 //private int idProduto;
+        private double _pricePurchaseProduct;   // PREÇO DE COMPRA DO PRODUTO
+        private double _priceSellProduct;       // PREÇO DE VENDA DO PRODUTO
+        private double _costsProduct;           //private double custoProduto;
+        private double _costsOthers;            //private double custosOutros;
+        private string _typeOfCosts;            //private string tipoDeCusto;
         private string _delete;
         #endregion
 
@@ -27,10 +27,10 @@ namespace SalesPrice
             get { return _priceSellProduct; }
             set { _priceSellProduct = value; }
         }
-        public double CostsProvider
+        public int IdProduto
         {
-            get { return _costsProvider; }
-            set { _costsProvider = value; }
+            get { return _idProduto; }
+            set { _idProduto = value; }
         }
         public double costsProduct
         {
@@ -56,15 +56,15 @@ namespace SalesPrice
         }
         #endregion
         #region "CONSTRUTORES SALESPRICE"
-        public SalesPrice()
+        public Stock()
         {
 
         }
-        public SalesPrice(double pricePurchaseProduct, double priceSellProduct, double costsProvider, double costsOthers, string typeOfCosts, string delete )
+        public Stock(double pricePurchaseProduct, double priceSellProduct, int idProduto, double costsOthers, string typeOfCosts, string delete )
         {
             _pricePurchaseProduct = pricePurchaseProduct;
             _priceSellProduct = priceSellProduct;
-            _costsProvider = costsProvider;
+            _idProduto = idProduto;
             _costsOthers = costsOthers;
             _typeOfCosts = typeOfCosts;
             _delete = delete;

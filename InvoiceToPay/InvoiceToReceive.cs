@@ -2,18 +2,18 @@
 
 namespace Accounting
 {
-    public class InvoiceToPay // CONTAS A PAGAR
+    public class InvoiceToReceive // CONTAS A Receber
     {
         #region "Atributos"
-        private int _idII;    //private int idNE;
+        private int _idIO;    //private int idNotaFatura;
         private bool _status; //private bool _status;
         #endregion
 
         #region "Propriedades"
-        public int IdII
+        public int IdIO
         {
-            get { return _idII; }
-            set { _idII = value; }
+            get { return _idIO; }
+            set { _idIO = value; }
         }
         public bool Status
         {
@@ -23,13 +23,13 @@ namespace Accounting
         #endregion
 
         #region "Construtores"
-        public InvoiceToPay()
+        public InvoiceToReceive()
         {
 
         }
-        public InvoiceToPay(int idII, bool status)
+        public InvoiceToReceive(int idIO, bool status)
         {
-            _idII = idII;
+            _idIO = idIO;
             _status = status;
         }
         #endregion

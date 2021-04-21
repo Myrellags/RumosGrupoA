@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace InputInvoice
+namespace Purchase
 {
     public class InputInvoice // notas de encomenda 
     {
