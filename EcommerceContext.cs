@@ -29,7 +29,7 @@ public class EcommerceContext : DBContext
 
     #endregion
 
-    #region "Conexão"
+    #region "Conexão com o BD"
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 	{
 		optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=BDEcommerce;Trusted_Connection=True;");
