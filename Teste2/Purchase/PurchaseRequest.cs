@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Purchase
 {
@@ -8,12 +9,13 @@ namespace Ecommerce.Purchase
         #region "Propriedades"
 
         public int PurchaseRequestID { get; set; }
+        [ForeignKey("Quotation")]
         public int QuotationID { get; set; }
         public bool Okay { get; set; }
-        public int MethodOfPaymentID { get; set; }
+        public string MethodOfPayment { get; set; }
         public double CampaignProvider { get; set; }
 
-        public InputInvoice InputInvoice
+        public Quotation Quotation
         {
             get => default;
             set
@@ -29,12 +31,12 @@ namespace Ecommerce.Purchase
 
         }
 
-        public PurchaseRequest (int idQuotation, int idPurchaseRequest, bool okay, int idMethodOfPayment, double campaignProvider)
+        public PurchaseRequest (int idQuotation, int idPurchaseRequest, bool okay, string methodOfPayment, double campaignProvider)
         {
             QuotationID = idQuotation;
             PurchaseRequestID = idPurchaseRequest;
             Okay = okay;
-            MethodOfPaymentID = idMethodOfPayment;
+            MethodOfPayment = methodOfPayment;
             CampaignProvider = campaignProvider;
         }
         #endregion

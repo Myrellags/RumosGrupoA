@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Purchase
 {
@@ -6,9 +7,10 @@ namespace Ecommerce.Purchase
     {
         #region "Propriedades"
         public int InputInvoiceID { get; set; }
-        public int ProviderID { get; set; }
-        public int MethodOfPaymentID { get; set; }
-        public int ProductID { get; set; }
+        [ForeignKey("PurchaseRequest")] 
+        public int PurchaseRequestID { get; set; }
+        public string NameProvider { get; set; }
+        public string MethodOfPayment { get; set; }
         public string NumberII { get; set; }
         public DateTime DateII { get; set; }
         public string NameProduct { get; set; }
@@ -16,7 +18,7 @@ namespace Ecommerce.Purchase
         public double PriceProduct { get; set; }
         public double CampaignProvider { get; set; }
 
-        public Accounting.InvoiceToPay InvoiceToPay
+        public PurchaseRequest PurchaseRequest
         {
             get => default;
             set
@@ -31,13 +33,13 @@ namespace Ecommerce.Purchase
         {
 
         }
-        public InputInvoice(int idII, int idProvider, int idMethodOfPayment, int idProduct, string numberII, DateTime dateII,   
+        public InputInvoice(int idII, int purchaseRequestID, string nameProvider, string methodOfPayment, string numberII, DateTime dateII,   
                             string nameProduct, int qtdProduct, double priceProduct, double campaignProvider)
         {
             InputInvoiceID = idII;
-            ProviderID = idProvider;
-            MethodOfPaymentID = idMethodOfPayment;
-            ProductID = idProduct;
+            PurchaseRequestID = purchaseRequestID;
+            NameProvider = nameProvider;
+            MethodOfPayment = methodOfPayment;
             NumberII = numberII;
             DateII = dateII;
             NameProduct = nameProduct;

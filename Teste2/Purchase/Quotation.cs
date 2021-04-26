@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Purchase
 {
@@ -6,21 +7,18 @@ namespace Ecommerce.Purchase
     {
         #region "Propriedades"
         public int QuotationID { get; set; }
-        public int UserID { get; set; }
+        [ForeignKey("Provider")]
         public int ProviderID { get; set; }
+        [ForeignKey("Product")]
+        public int ProductID { get; set; }
+        [ForeignKey("MethodOfPayment")]
+        public int MethodOfPaymentID { get; set; }
+        public string NameUser { get; set; }
         public string NameProduct { get; set; }
+        public string NameProvider { get; set; }
         public double PriceProduct { get; set; }
         public int QuantityProduct { get; set; }
-        public bool ListaProdutos { get; set; }
         public string Delete { get; set; }
-
-        public PurchaseRequest PurchaseRequest
-        {
-            get => default;
-            set
-            {
-            }
-        }
 
         public MethodOfPayment MethodOfPayment
         {
@@ -35,16 +33,18 @@ namespace Ecommerce.Purchase
         public Quotation()
         {
         }
-        public Quotation(int idQuotation, int idUser, int idProvider, string nameProduct,
-                int priceProduct, int quantityProduct, bool listProduct, string delete)
+        public Quotation(int quotationID, int providerID, int productID, int methodOfPaymentID, string nameUser, string nameProduct,
+            string nameProvider, int priceProduct, int quantityProduct, string delete)
         {
-            QuotationID = idQuotation;
-            UserID = idUser;
-            ProviderID = idProvider;
+            QuotationID = quotationID;
+            ProviderID = providerID;
+            ProductID = productID;
+            MethodOfPaymentID = methodOfPaymentID;
+            NameUser = nameUser;
             NameProduct = nameProduct;
+            NameProvider = nameProvider;
             PriceProduct = priceProduct;
             QuantityProduct = quantityProduct;
-            ListaProdutos = listProduct;
             Delete = delete;
         }
         #endregion

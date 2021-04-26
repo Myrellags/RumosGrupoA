@@ -3,22 +3,21 @@
   <Class Name="Ecommerce.Purchase.Quotation">
     <Position X="17.25" Y="9.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQAAAgAEgIAEAABAAAAAAAgAAAEAAAAABAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAgAEgIAEAABAAAAAAAgAAAEAAAAABAAAAAAAAAA=</HashCode>
       <FileName>Purchase\Quotation.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="PurchaseRequest" />
       <Property Name="MethodOfPayment" />
     </ShowAsAssociation>
   </Class>
   <Class Name="Ecommerce.Purchase.PurchaseRequest">
     <Position X="17.25" Y="6" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAABAAAABAgAAAAAAgAAAAAAEAAAAAAAABAAA=</HashCode>
+      <HashCode>AAAAAAAAABAAAADAgAAAAAAgAAAAAAAAAAAAAAABAAA=</HashCode>
       <FileName>Purchase\PurchaseRequest.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="InputInvoice" />
+      <Property Name="Quotation" />
     </ShowAsAssociation>
   </Class>
   <Class Name="Ecommerce.Purchase.MethodOfPayment">
@@ -31,11 +30,11 @@
   <Class Name="Ecommerce.Purchase.InputInvoice">
     <Position X="20" Y="6" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EBAAQggEABAEAAAAAAAAACAAAAAAAAAAAAAAAAABgAA=</HashCode>
+      <HashCode>ERAAQggEABAEAAAAAAAAACAgAAAAAAAAAAAAAAABAAA=</HashCode>
       <FileName>Purchase\InputInvoice.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="InvoiceToPay" />
+      <Property Name="PurchaseRequest" />
     </ShowAsAssociation>
   </Class>
   <Class Name="Ecommerce.Personal.Person">
@@ -55,9 +54,12 @@
   <Class Name="Ecommerce.Accounting.InvoiceToPay">
     <Position X="20" Y="10" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAQAgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAQAgEAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
       <FileName>Accounting\InvoiceToPay.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="InputInvoice" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="Ecommerce.Accounting.InvoiceToReceive">
     <Position X="13" Y="15" Width="1.5" />
