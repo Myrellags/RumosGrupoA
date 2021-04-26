@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Ecommerce.Purchase.Quotation">
+    <Position X="17.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAgAEgIAEAABAAAAAAAgAAAEAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Purchase\Quotation.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="PurchaseRequest" />
+      <Property Name="MethodOfPayment" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Ecommerce.Purchase.PurchaseRequest">
+    <Position X="17.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAABAgAAAAAAgAAAAAAEAAAAAAAABAAA=</HashCode>
+      <FileName>Purchase\PurchaseRequest.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="InputInvoice" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Ecommerce.Purchase.MethodOfPayment">
+    <Position X="17.25" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAACAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Purchase\MethodOfPayment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ecommerce.Purchase.InputInvoice">
+    <Position X="20" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBAAQggEABAEAAAAAAAAACAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Purchase\InputInvoice.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
