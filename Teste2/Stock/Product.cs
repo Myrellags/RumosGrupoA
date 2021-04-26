@@ -17,10 +17,27 @@ namespace Ecommerce.Stock
 		public string CategoryProduct { get; set; }
 		public string Delete { get; set; }
 
+        public Stock.Inventory Inventory
+        {
+            get => default(Stock.Inventory);
+            set
+            {
+            }
+        }
 
-		#endregion
-		#region "CONTRUTORES PRODUCT"
-		public Product()
+        public Stock.Inventory Inventory1
+        {
+            get => default(Stock.Inventory);
+            set
+            {
+            }
+        }
+
+
+        #endregion
+
+        #region "CONTRUTORES PRODUCT"
+        public Product()
         {
 
         }

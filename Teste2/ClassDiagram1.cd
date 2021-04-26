@@ -3,17 +3,18 @@
   <Class Name="Ecommerce.Purchase.Quotation">
     <Position X="17.25" Y="9.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAgAEgIAEAABAAAAAAAgAAAEAAAAABAAAAAAAAAA=</HashCode>
+      <HashCode>UAACAgAEAJAEAABAAAAAAAAAAAEAAAAABAEAAAAAAAQ=</HashCode>
       <FileName>Purchase\Quotation.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="MethodOfPayment" />
+      <Property Name="Product" />
     </ShowAsAssociation>
   </Class>
   <Class Name="Ecommerce.Purchase.PurchaseRequest">
     <Position X="17.25" Y="6" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAABAAAADAgAAAAAAgAAAAAAAAAAAAAAABAAA=</HashCode>
+      <HashCode>AAAAAAAAAIAAAADAgAAAAAAgAAAAAAAAAAAAAAABAAA=</HashCode>
       <FileName>Purchase\PurchaseRequest.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -21,7 +22,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Ecommerce.Purchase.MethodOfPayment">
-    <Position X="17.25" Y="13.25" Width="1.5" />
+    <Position X="17.25" Y="13.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAABAAAAAAAACAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
       <FileName>Purchase\MethodOfPayment.cs</FileName>
@@ -30,7 +31,7 @@
   <Class Name="Ecommerce.Purchase.InputInvoice">
     <Position X="20" Y="6" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ERAAQggEABAEAAAAAAAAACAgAAAAAAAAAAAAAAABAAA=</HashCode>
+      <HashCode>ARAAQggEAIAAAAAAAAAAACAgAAAAAAAAAAEAAAABAAA=</HashCode>
       <FileName>Purchase\InputInvoice.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -95,7 +96,7 @@
   <Class Name="Ecommerce.Stock.Product">
     <Position X="13" Y="8.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EUABAIAMAABAAAAAAAAAAAAAAAEAAAAQAAAAEAAAAAA=</HashCode>
+      <HashCode>EUABAIAMAABAAAAAAAAAAAAAAAEAAAAQAAQAEgAAAAA=</HashCode>
       <FileName>Stock\Product.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -114,18 +115,21 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Ecommerce.Stock.Warehouse" Collapsed="true">
-    <Position X="11.75" Y="7.25" Width="1.5" />
+    <Position X="13.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAgAAAAAAAAgAAAAAAAAAAAAAAAAIAAACAAA=</HashCode>
       <FileName>Stock\Warehouse.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Stock.Inventory">
-    <Position X="10.75" Y="8.75" Width="1.25" />
+    <Position X="9" Y="4.25" Width="1.25" />
     <TypeIdentifier>
-      <HashCode>EAAAAABAAAAAAAAAAAAAAAABBAAAAAAAAIAAAQAAAAA=</HashCode>
+      <HashCode>EAACAABAAAAAAAAAAAAAAAABBAAAAAAAAIAAAQAAAAA=</HashCode>
       <FileName>Stock\Inventory.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Product" />
+    </ShowAsAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

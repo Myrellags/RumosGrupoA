@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Purchase
@@ -19,8 +20,17 @@ namespace Ecommerce.Purchase
         public double PriceProduct { get; set; }
         public int QuantityProduct { get; set; }
         public string Delete { get; set; }
+        public List<Stock.Product> Products { get; set; }
 
         public MethodOfPayment MethodOfPayment
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public Stock.Product Product
         {
             get => default;
             set

@@ -11,7 +11,16 @@ namespace Stock
         public string ProductDescription { get; set; }
         public string NameInventor { get; set; }
         public int NewQuantity { get; set; }
+
+        public Ecommerce.Stock.Product Product
+        {
+            get => default;
+            set
+            {
+            }
+        }
         #endregion
+
         #region "CONTRUTORES INVENTORY"
         public Inventory()
         {
