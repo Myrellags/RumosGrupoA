@@ -76,5 +76,54 @@
       <Property Name="User" />
     </ShowAsAssociation>
   </Class>
+  <Class Name="Ecommerce.Stock.Category" Collapsed="true">
+    <Position X="11.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAABAAAAAAAAAAEAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Stock\Category.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ecommerce.Stock.IsOnSale" Collapsed="true">
+    <Position X="15.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAZAAAAAAABgAAAAAABAAAAAAABAIQAAAAAA=</HashCode>
+      <FileName>Stock\IsOnSale.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ecommerce.Stock.Product">
+    <Position X="13" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EUABAIAMAABAAAAAAAAAAAAAAAEAAAAQAAAAEAAAAAA=</HashCode>
+      <FileName>Stock\Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ecommerce.Stock.Stock" Collapsed="true">
+    <Position X="13.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAICAAAAAQAABAAMAIBABAEAAAACBAAAAAQAAAA=</HashCode>
+      <FileName>Stock\SalesPrice.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ecommerce.Stock.TypeExit" Collapsed="true">
+    <Position X="15.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAIAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Stock\TypeExit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ecommerce.Stock.Warehouse" Collapsed="true">
+    <Position X="11.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAgAAAAAAAAAAAAAAAAIAAACAAA=</HashCode>
+      <FileName>Stock\Warehouse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Stock.Inventory">
+    <Position X="10.75" Y="8.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>EAAAAABAAAAAAAAAAAAAAAABBAAAAAAAAIAAAQAAAAA=</HashCode>
+      <FileName>Stock\Inventory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
