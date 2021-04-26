@@ -5,7 +5,6 @@ namespace Ecommerce.Accounting
 {
     public class InvoiceToPay // CONTAS A PAGAR
     {
-
         #region "Propriedades"
         public int InvoiceToPayID { get; set; }
         [ForeignKey("InputInvoice")]
