@@ -4,22 +4,10 @@ namespace Ecommerce.Accounting
 {
     public class InvoiceToReceive // CONTAS A Receber
     {
-        #region "Atributos"
-        private int _idIO;    //private int idNotaFatura;
-        private bool _status; //private bool _status;
-        #endregion
-
         #region "Propriedades"
-        public int IdIO
-        {
-            get { return _idIO; }
-            set { _idIO = value; }
-        }
-        public bool Status
-        {
-            get { return _status; }
-            set { _status = value; }
-        }
+        public int InvoiceToReceiveID { get; set; }
+        public int InvoiceOrderID { get; set; }
+        public bool Status { get; set; }
         #endregion
 
         #region "Construtores"
@@ -29,8 +17,8 @@ namespace Ecommerce.Accounting
         }
         public InvoiceToReceive(int idIO, bool status)
         {
-            _idIO = idIO;
-            _status = status;
+            InvoiceOrderID = idIO;
+            Status = status;
         }
         #endregion
     }

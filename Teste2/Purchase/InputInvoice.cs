@@ -15,10 +15,18 @@ namespace Ecommerce.Purchase
         public int QtdProduct { get; set; }
         public double PriceProduct { get; set; }
         public double CampaignProvider { get; set; }
-        
+
+        public Accounting.InvoiceToPay InvoiceToPay
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         #endregion
 
-    #region "Construtores"
+        #region "Construtores"
         public InputInvoice()
         {
 

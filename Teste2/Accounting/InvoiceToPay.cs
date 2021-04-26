@@ -4,22 +4,11 @@ namespace Ecommerce.Accounting
 {
     public class InvoiceToPay // CONTAS A PAGAR
     {
-        #region "Atributos"
-        private int _idII;    //private int idNE;
-        private bool _status; //private bool _status;
-        #endregion
 
         #region "Propriedades"
-        public int IdII
-        {
-            get { return _idII; }
-            set { _idII = value; }
-        }
-        public bool Status
-        {
-            get { return _status; }
-            set { _status = value; }
-        }
+        public int InvoiceToPayID { get; set; }
+        public int InputInvoiceID { get; set; }
+        public bool Status { get; set; }
         #endregion
 
         #region "Construtores"
@@ -29,8 +18,8 @@ namespace Ecommerce.Accounting
         }
         public InvoiceToPay(int idII, bool status)
         {
-            _idII = idII;
-            _status = status;
+            InputInvoiceID = idII;
+            Status = status;
         }
         #endregion
     }

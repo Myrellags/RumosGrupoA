@@ -31,9 +31,50 @@
   <Class Name="Ecommerce.Purchase.InputInvoice">
     <Position X="20" Y="6" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EBAAQggEABAEAAAAAAAAACAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <HashCode>EBAAQggEABAEAAAAAAAAACAAAAAAAAAAAAAAAAABgAA=</HashCode>
       <FileName>Purchase\InputInvoice.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="InvoiceToPay" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Ecommerce.Personal.Person">
+    <Position X="4.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQCAQAAAAAAgAAYIEAAAAAABAoAAAAAAAIAAAEAAAI=</HashCode>
+      <FileName>Personal\Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ecommerce.Personal.User">
+    <Position X="4.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Personal\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ecommerce.Accounting.InvoiceToPay">
+    <Position X="20" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Accounting\InvoiceToPay.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ecommerce.Accounting.InvoiceToReceive">
+    <Position X="13" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAEAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Accounting\InvoiceToReceive.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ecommerce.Billing.Costumer">
+    <Position X="4.75" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAQAAAAAAAAAAAAAAgAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Billing\Costumer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="User" />
+    </ShowAsAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
