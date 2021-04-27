@@ -37,6 +37,14 @@ namespace Ecommerce.Purchase
             {
             }
         }
+
+        public Billing.Provider Provider
+        {
+            get => default;
+            set
+            {
+            }
+        }
         #endregion
 
         #region "Construtores"

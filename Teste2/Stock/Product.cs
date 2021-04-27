@@ -33,6 +33,46 @@ namespace Ecommerce.Stock
             }
         }
 
+        public Category Category
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public TypeExit TypeExit
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public SalesPrice SalesPrice
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public Warehouse Warehouse
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public Billing.Provider Provider
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
 
         #endregion
 

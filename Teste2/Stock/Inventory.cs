@@ -8,16 +8,24 @@ namespace Ecommerce.Stock
         #region "PROPRIEDADES INVENTORY"
         public int InventoryID { get; set; }
 
-        [ForeignKey("Product")]
+   
         public int ProductID { get; set; }
 
-        [ForeignKey("Warehouse")]
+        
         public int WarehouseID { get; set; }
         public string ProductDescription { get; set; }
         public string NameInventor { get; set; }
         public int NewQuantity { get; set; }
 
-      
+        public Product Product
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+
         #endregion
 
         #region "CONTRUTORES INVENTORY"

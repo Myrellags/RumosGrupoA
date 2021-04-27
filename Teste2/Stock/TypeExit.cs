@@ -7,10 +7,7 @@ namespace Ecommerce.Stock
 
     {
         #region "PROPRIEDADES TYPEEXIT"
-        [ForeignKey("Product")]
         public int ProductID { get; set; }
-
-        [ForeignKey("Warehouse")]
         public int WarehouseID { get; set; }
         public string Typeexit { get; set; }
         #endregion

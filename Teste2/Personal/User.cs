@@ -9,6 +9,22 @@ namespace Ecommerce.Personal
         public int PersonID { get; set; }
         public string PassUser { get; set; }
 
+        public Billing.ShoppingCar ShoppingCar
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public Billing.Costumer Costumer
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         #endregion
 
         #region "CONSTRUTORES USER"

@@ -8,16 +8,18 @@ namespace Ecommerce.Billing
     { 
         #region "Propriedades"
         public int ShoppingCarID { get; set; }
-        [ForeignKey("Client")]
         public int ClientID { get; set; }
-        [ForeignKey("Product")]
         public int ProductID { get; set; }
-        [ForeignKey("MethodOfPayment")]
         public int MethodOfPaymentID { get; set; }
         public int QuantityOfProdut { get; set; }
         public double PriceProduct { get; set; }
         public double WeightProduct { get; set; }
         public string Delete { get; set; }
+
+
+        public Ecommerce.Stock.Product Product;
+        public Ecommerce.Purchase.MethodOfPayment MethodOfPayment;
+
        
         #endregion
 
