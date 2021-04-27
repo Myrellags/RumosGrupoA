@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Stock
 {
-    public class Stock
+    public class SalesPrice
     {
 
         #region "Propriedades SALESPRICE"
@@ -18,12 +18,13 @@ namespace Ecommerce.Stock
         public string Delete { get; set; }
         #endregion
 
+
         #region "CONSTRUTORES SALESPRICE"
-        public Stock()
+        public SalesPrice()
         {
 
         }
-        public Stock(double pricePurchaseProduct, double priceSellProduct, int idProduto, double costsOthers, string typeOfCosts, string delete, double costsproduct)
+        public SalesPrice(double pricePurchaseProduct, double priceSellProduct, int idProduto, double costsOthers, string typeOfCosts, string delete, double costsproduct)
         {
             PurchaseProduct = pricePurchaseProduct;
             PriceSellProduct = priceSellProduct;
