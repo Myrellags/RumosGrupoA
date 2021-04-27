@@ -4,15 +4,13 @@ namespace Ecommerce.Stock
 {
     public class Warehouse
     {
-        // private string _idWarehouse; //private string _idArmazem
-        // private string _descriptionWarehouse; //private string _descricaoArmazem
 
-        #region "Propriedades"
+        #region "Propriedades Warehouse"
         public int WarehouseID { get; set; }
         public string DescriptionWarehouse { get; set; }
         #endregion
 
-        #region "Construtores"
+        #region "Construtores Warehouse"
         public Warehouse()
         {
 

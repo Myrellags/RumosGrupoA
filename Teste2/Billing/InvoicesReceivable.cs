@@ -5,42 +5,15 @@ namespace Ecommerce.Billing
 {
     public class InvoicesReceivable // Pedidos de Venda 
     {
-        #region "ATRIBUTOS INVOICESRECEIVABLE"
-        private int _idInvoicesReceivable; //int _idPedidoVenda;
-        private int _idCustomer; // int id cliente
-        private int _idProduct; // int id produto
-        private int _idShoppingCar; // int carrinho de compras
-        private int _idMethodOfPayment; // int metodos de pagamento 
-        private int _amountProduct; // quantidade de produto
-        private double _priceProduct; // preço do produto
-        private double _weightProduct; // _pesoProduto;
-        private string _delete; //int    
-        private double _discountCoupon; //private string cupomDesconto
-        private string _status;        //private string status
-
-        #endregion
 
         #region "PROPRIEDADES PEDIDOS DE VENDA" 
-        public int IdInvoicesReceivable
-        {
-            get { return _idInvoicesReceivable; }
-            set { _idInvoicesReceivable = value; }
-        }
-        public int IdCustomer
-        {
-            get { return _idCustomer; }
-            set { _idCustomer = value; }
-        }
-        public int IdProduct
-        {
-            get { return _idProduct; }
-            set { _idProduct = value; }
-        }
-        public int IdShoppingCar
-        {
-            get { return _idShoppingCar; }
-            set { _idShoppingCar = value; }
-        }
+        public int IdInvoicesReceivable { get; set; }
+        public int IdCustomer { get; set; }
+
+        public int IdProduct { get; set; }
+
+        public int IdShoppingCar { get; set; }
+
         public int IdMethodOfPayment
         {
             get { return _idMethodOfPayment; }

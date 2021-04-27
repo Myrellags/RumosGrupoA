@@ -1,13 +1,11 @@
 ﻿using System;
 
-/// <summary>
-/// Summary description for Class1
-/// </summary>
+
 namespace Ecommerce.Stock
 {
     public class Category
     {
-        #region "Propriedades"
+        #region "Propriedades Category"
 
         public int CategoriaID { get; set; }
         public string NomeCategoria { get; set; }
@@ -20,7 +18,7 @@ namespace Ecommerce.Stock
         }
         #endregion
 
-        #region "Construtores"
+        #region "Construtores Category"
         public Category()
         {
 

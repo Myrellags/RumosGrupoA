@@ -6,13 +6,16 @@ namespace Ecommerce.Stock
     public class TypeExit
 
     {
+        #region "PROPRIEDADES TYPEEXIT"
         [ForeignKey("Product")]
         public int ProductID { get; set; }
 
         [ForeignKey("Warehouse")]
         public int WarehouseID { get; set; }
         public string Typeexit { get; set; }
+        #endregion
 
+        #region "CONSTRUTORES TYPEEXIT"
         public TypeExit()
         {
 
@@ -24,8 +27,8 @@ namespace Ecommerce.Stock
             WarehouseID = idWarehouse;
             Typeexit = typeexit;
         }
-
+        #endregion
     }
 
-   
+
 }
