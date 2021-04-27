@@ -5,11 +5,6 @@ namespace Ecommerce.Billing
 {
     public class UnlockedStock
     {
-        #region "Atributos"
-        private int _idUnlocked;  //private int idUnlocked;
-        private int _idProduct;   //private int idProduto;
-        private string _status;     //private string status;
-        #endregion
 
         #region "Propriedades"
 
