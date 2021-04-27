@@ -9,6 +9,8 @@ namespace Ecommerce.Purchase
         public string NameMethodOfPayment { get; set; }
         public int TipoMethodOfPayment { get; set; }
         #endregion
+
+        // comentario roger : não faltam aqui os construtores? 
     }
 
 }

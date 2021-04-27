@@ -80,16 +80,16 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Ecommerce.Stock.Category">
-    <Position X="11.75" Y="5.25" Width="1.5" />
+    <Position X="11.25" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAABAQAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
       <FileName>Stock\Category.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Ecommerce.Stock.IsOnSale" Collapsed="true">
-    <Position X="15.25" Y="5.25" Width="1.5" />
+  <Class Name="Ecommerce.Stock.IsOnSale">
+    <Position X="16" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAACAAZAAAAAAABgAAAAAABAAAAAAABAIQAAAAAA=</HashCode>
+      <HashCode>EAAAAABAAQAAAEAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Stock\IsOnSale.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -100,36 +100,33 @@
       <FileName>Stock\Product.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Ecommerce.Stock.Stock">
-    <Position X="13.5" Y="5.25" Width="1.5" />
+  <Class Name="Ecommerce.Stock.TypeExit">
+    <Position X="15.25" Y="6.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAABAAICAAAAAQAABAAMAIBABAEAAAACBAAAAAQAAAA=</HashCode>
-      <FileName>Stock\SalesPrice.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Ecommerce.Stock.TypeExit" Collapsed="true">
-    <Position X="15.25" Y="6.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAACAAAAIAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>EAAAAABAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Stock\TypeExit.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Ecommerce.Stock.Warehouse" Collapsed="true">
-    <Position X="13.5" Y="4.5" Width="1.5" />
+  <Class Name="Ecommerce.Stock.Warehouse">
+    <Position X="14" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAgAAAAAAAAgAAAAAAAAAAAAAAAAIAAACAAA=</HashCode>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
       <FileName>Stock\Warehouse.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Stock.Inventory">
+  <Class Name="Ecommerce.Stock.Inventory">
     <Position X="9" Y="4.25" Width="1.25" />
     <TypeIdentifier>
-      <HashCode>EAACAABAAAAAAAAAAAAAAAABBAAAAAAAAIAAAQAAAAA=</HashCode>
+      <HashCode>EAAAAABAAAAAAAAAAAAAAAABBAAAAAAAAIAAAQAAAAA=</HashCode>
       <FileName>Stock\Inventory.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Product" />
-    </ShowAsAssociation>
+  </Class>
+  <Class Name="Ecommerce.Stock.SalesPrice">
+    <Position X="13.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAABAAACAAAAAAAAAAAAAAAAAAEAAAAAAAAEAAQIAAA=</HashCode>
+      <FileName>Stock\SalesPrice.cs</FileName>
+    </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
