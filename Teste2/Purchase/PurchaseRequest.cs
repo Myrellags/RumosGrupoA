@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Purchase
@@ -9,7 +10,7 @@ namespace Ecommerce.Purchase
         #region "Propriedades"
 
         public int PurchaseRequestID { get; set; }
-        [ForeignKey("Quotation")]
+        //[ForeignKey("Quotation")]
         public int QuotationID { get; set; }
         public bool Okay { get; set; }
         public string MethodOfPayment { get; set; }
@@ -22,6 +23,8 @@ namespace Ecommerce.Purchase
             {
             }
         }
+        public List<Purchase.Quotation> Quotations { get; set; }
+
         #endregion
 
         #region"Construtores"

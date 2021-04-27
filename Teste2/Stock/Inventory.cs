@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Stock
@@ -7,15 +8,14 @@ namespace Ecommerce.Stock
     {
         #region "PROPRIEDADES INVENTORY"
         public int InventoryID { get; set; }
-
-   
         public int ProductID { get; set; }
-
-        
         public int WarehouseID { get; set; }
         public string ProductDescription { get; set; }
         public string NameInventor { get; set; }
         public int NewQuantity { get; set; }
+
+        public List<Stock.Product> Products { get; set; }
+        public List<Stock.Warehouse> Warehouses { get; set; }
 
         public Product Product
         {

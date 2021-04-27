@@ -7,7 +7,7 @@ namespace Ecommerce.Purchase
     {
         #region "Propriedades"
         public int InputInvoiceID { get; set; }
-        [ForeignKey("PurchaseRequest")] 
+        //[ForeignKey("PurchaseRequest")] 
         public int PurchaseRequestID { get; set; }
         public string NameProvider { get; set; }
         public string MethodOfPayment { get; set; }

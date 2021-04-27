@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Stock
@@ -8,15 +9,18 @@ namespace Ecommerce.Stock
         #region "Propriedades"
         public int IsOnSaleID { get; set; }
 
-        [ForeignKey("Product")]
+        //[ForeignKey("Product")]
         public int ProductID { get; set; }
 
-        [ForeignKey("Warehouse")]
+        //[ForeignKey("Warehouse")]
         public int WarehouseID { get; set; }
 
         public double CostProduct { get; set; }
         public double ValueSalePercent { get; set; }
-        
+
+        public List<Stock.Product> Products { get; set; }
+        public List<Stock.Warehouse> Warehouses { get; set; }
+
         #endregion
 
         #region "Construtores"

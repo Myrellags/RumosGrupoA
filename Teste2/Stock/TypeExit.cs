@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Stock
@@ -10,6 +11,9 @@ namespace Ecommerce.Stock
         public int ProductID { get; set; }
         public int WarehouseID { get; set; }
         public string Typeexit { get; set; }
+
+        public List<Stock.Product> Products { get; set; }
+        public List<Stock.Warehouse> Warehouses { get; set; }
         #endregion
 
         #region "CONSTRUTORES TYPEEXIT"

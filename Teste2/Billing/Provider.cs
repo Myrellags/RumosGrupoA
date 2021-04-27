@@ -9,7 +9,7 @@ namespace Ecommerce.Billing
         #region "Propriedades"
 
         public int ProviderID { get; set; }
-        [ForeignKey("People")]
+        //[ForeignKey("People")]
         public int PeopleID { get; set; }
       
         public string Delete { get; set; }

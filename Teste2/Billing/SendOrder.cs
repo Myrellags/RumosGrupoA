@@ -11,7 +11,7 @@ namespace Ecommerce.Billing
         #region "Propriedades"
 
         public int SendOrderID { get; set; }
-        [ForeignKey("SalesOrder")]
+        //[ForeignKey("SalesOrder")]
         public int SalesOrderID { get; set; }
 
         public string Status { get; set; }

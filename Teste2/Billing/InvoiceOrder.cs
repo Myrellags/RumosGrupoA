@@ -12,7 +12,7 @@ namespace Ecommerce.Billing
         #region "Propriedades"
 
         public int IoID { get; set; }
-        [ForeignKey("InvoicesReceivable")]
+       
         public int InvoicesReceivableID { get; set; }
         public string Status { get; set; }
         #endregion

@@ -9,13 +9,13 @@ namespace Ecommerce.Billing
 
         #region "PROPRIEDADES PEDIDOS DE VENDA" 
         public int InvoicesReceivableID { get; set; }
-        [ForeignKey("Customer")]
+        //[ForeignKey("Customer")]
         public int CustomerID { get; set; }
-        [ForeignKey("Product")]
+        //[ForeignKey("Product")]
         public int ProductID { get; set; }
-        [ForeignKey("ShoppingCar")]
+        [//ForeignKey("ShoppingCar")]
         public int ShoppingCarID { get; set; }
-        [ForeignKey("MethodOfPayment")]
+        //[ForeignKey("MethodOfPayment")]
         public int MethodOfPaymentID { get; set; }
         public int AmountProduct { get; set; }
         public double PriceProduct { get; set; }

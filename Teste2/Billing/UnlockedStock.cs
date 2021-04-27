@@ -10,7 +10,7 @@ namespace Ecommerce.Billing
 
         public int UnlockedID { get; set; }
 
-        [ForeignKey("ProductI")]
+        //[ForeignKey("ProductI")]
         public int ProductID { get; set; }
         public string Status { get; set; }
         

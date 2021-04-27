@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Stock
@@ -10,12 +11,15 @@ namespace Ecommerce.Stock
         public double PurchaseProduct { get; set; }
         public double PriceSellProduct { get; set; }
 
-        [ForeignKey("Product")]
+        //[ForeignKey("Product")]
         public int ProdutoID { get; set; }
         public double CostsProduct { get; set; }
         public double CostsOthers { get; set; }
         public string TypeOfCosts { get; set; }
         public string Delete { get; set; }
+
+        public List<Stock.Product> Products { get; set; }
+
         #endregion
 
 

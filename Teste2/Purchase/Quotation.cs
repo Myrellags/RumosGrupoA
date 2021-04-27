@@ -8,11 +8,11 @@ namespace Ecommerce.Purchase
     {
         #region "Propriedades"
         public int QuotationID { get; set; }
-        [ForeignKey("Provider")]
+        //[ForeignKey("Provider")]
         public int ProviderID { get; set; }
-        [ForeignKey("Product")]
+        //[ForeignKey("Product")]
         public int ProductID { get; set; }
-        [ForeignKey("MethodOfPayment")]
+        //[ForeignKey("MethodOfPayment")]
         public int MethodOfPaymentID { get; set; }
         public string NameUser { get; set; }
         public string NameProduct { get; set; }
@@ -21,6 +21,7 @@ namespace Ecommerce.Purchase
         public int QuantityProduct { get; set; }
         public string Delete { get; set; }
         public List<Stock.Product> Products { get; set; }
+        public List<Billing.Provider> Providers { get; set; }
 
         public MethodOfPayment MethodOfPayment
         {
