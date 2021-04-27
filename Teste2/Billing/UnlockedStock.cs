@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Billing
 {
@@ -12,23 +13,12 @@ namespace Ecommerce.Billing
 
         #region "Propriedades"
 
-        public int IdUnlocked
-        {
-            get { return _idUnlocked; }
-            set { _idUnlocked = value; }
-        }
+        public int UnlockedID { get; set; }
 
-        public int IdProduct
-        {
-            get { return _idProduct; }
-            set { _idProduct = value; }
-        }
-
-        public string Status
-        {
-            get { return _status; }
-            set { _status = value; }
-        }
+        [ForeignKey("ProductI")]
+        public int ProductID { get; set; }
+        public string Status { get; set; }
+        
         #endregion
 
         #region "Construtores"
@@ -39,9 +29,9 @@ namespace Ecommerce.Billing
 
         public UnlockedStock(int idUnlocked, int idProduct, string status)
         {
-            _idUnlocked = idUnlocked;
-            _idProduct = idProduct;
-            _status = status;
+            UnlockedID = idUnlocked;
+            ProductID = idProduct;
+            Status = status;
         }
 
         #endregion
