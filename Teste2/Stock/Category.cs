@@ -9,7 +9,7 @@ namespace Ecommerce.Stock
     {
         #region "Propriedades"
 
-        public string CategoriaID { get; set; }
+        public int CategoriaID { get; set; }
         public string NomeCategoria { get; set; }
         public Ecommerce.Stock.Category Category1
         {
@@ -26,7 +26,7 @@ namespace Ecommerce.Stock
 
         }
 
-        public Category(string idCategoria, string nomeCategoria)
+        public Category(int idCategoria, string nomeCategoria)
         {
             CategoriaID = idCategoria;
             NomeCategoria = nomeCategoria;
