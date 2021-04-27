@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Billing
 
@@ -7,51 +8,21 @@ namespace Ecommerce.Billing
     {
 
         #region "PROPRIEDADES PEDIDOS DE VENDA" 
-        public int IdInvoicesReceivable { get; set; }
-        public int IdCustomer { get; set; }
-
-        public int IdProduct { get; set; }
-
-        public int IdShoppingCar { get; set; }
-
-        public int IdMethodOfPayment
-        {
-            get { return _idMethodOfPayment; }
-            set { _idMethodOfPayment = value; }
-        }
-        public int AmountProduct
-        {
-            get { return _amountProduct; }
-            set { _amountProduct = value; }
-        }
-        public double PriceProduct
-        {
-            get { return _priceProduct; }
-            set { _priceProduct = value; }
-        }
-        public double WeightProduct
-        {
-            get { return _weightProduct; }
-            set { _weightProduct = value; }
-        }
-        public string Delete
-        {
-            get { return _delete; }
-            set { _delete = value; }
-        }
-
-        public double DiscountCoupon
-        {
-            get { return _discountCoupon; }
-            set { _discountCoupon = value; }
-        }
-
-        public string Status
-        {
-            get { return _status; }
-            set { _status = value; }
-        }
-
+        public int InvoicesReceivableID { get; set; }
+        [ForeignKey("Customer")]
+        public int CustomerID { get; set; }
+        [ForeignKey("Product")]
+        public int ProductID { get; set; }
+        [ForeignKey("ShoppingCar")]
+        public int ShoppingCarID { get; set; }
+        [ForeignKey("MethodOfPayment")]
+        public int MethodOfPaymentID { get; set; }
+        public int AmountProduct { get; set; }
+        public double PriceProduct { get; set; }
+        public double WeightProduct { get; set; }
+        public string Delete { get; set; }
+        public double DiscountCoupon { get; set; }
+        public string Status { get; set; }
         #endregion
 
         #region "construtores PEDIDOS DE VENDA"
@@ -62,17 +33,17 @@ namespace Ecommerce.Billing
         public InvoicesReceivable(int idInvoicesReceivable, int idCustomer, int idProduct, int idShoppingCar, int idMethodOfPayment, int amountProduct, double priceProduct, double weightProduct,
                         string delete, double discountCoupon, string status)
         {
-            _idInvoicesReceivable = idInvoicesReceivable;
-            _idCustomer = idCustomer;
-            _idProduct = idProduct;
-            _idShoppingCar =idShoppingCar;
-            _idMethodOfPayment = idMethodOfPayment;
-            _amountProduct = amountProduct;
-            _priceProduct = priceProduct;
-            _weightProduct = weightProduct;
-            _delete = delete;
-            _discountCoupon = discountCoupon;
-            _status = status;
+            InvoicesReceivableID = idInvoicesReceivable;
+            CustomerID = idCustomer;
+            ProductID = idProduct;
+            ShoppingCarID = idShoppingCar;
+            MethodOfPaymentID = idMethodOfPayment;
+            AmountProduct = amountProduct;
+            PriceProduct = priceProduct;
+            WeightProduct = weightProduct;
+            Delete = delete;
+            DiscountCoupon = discountCoupon;
+            Status = status;
          
         }
         #endregion
