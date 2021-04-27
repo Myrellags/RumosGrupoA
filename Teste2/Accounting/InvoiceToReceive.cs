@@ -15,8 +15,9 @@ namespace Ecommerce.Accounting
         {
 
         }
-        public InvoiceToReceive(int idIO, bool status)
+        public InvoiceToReceive(int idITR, int idIO, bool status)
         {
+            InvoiceToReceiveID = idITR;
             InvoiceOrderID = idIO;
             Status = status;
         }
