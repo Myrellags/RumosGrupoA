@@ -17,13 +17,6 @@ namespace Ecommerce.Stock
         public double CostProduct { get; set; }
         public double ValueSalePercent { get; set; }
         
-        public 
-        {
-            get => default;
-            set
-            {
-            }
-        }
         #endregion
 
         #region "Construtores"
