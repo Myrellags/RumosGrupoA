@@ -7,26 +7,17 @@ namespace Ecommerce.Stock
 {
     public class Category
     {
-
-        #region "Atributos"
-        private string _idCategoria; //private string idCategoria
-        private string _nomeCategoria; //private string nomeCategoria
-        #endregion
-
         #region "Propriedades"
 
-        public string idCategoria
+        public string CategoriaID { get; set; }
+        public string NomeCategoria { get; set; }
+        public Ecommerce.Stock.Category Category1
         {
-            get { return _idCategoria; }
-            set { _idCategoria = value; }
+            get => default;
+            set
+            {
+            }
         }
-
-        public string nomeCategoria
-        {
-            get { return _nomeCategoria; }
-            set { _nomeCategoria = value; }
-        }
-
         #endregion
 
         #region "Construtores"
@@ -37,8 +28,8 @@ namespace Ecommerce.Stock
 
         public Category(string idCategoria, string nomeCategoria)
         {
-            _idCategoria = idCategoria;
-            _nomeCategoria = nomeCategoria;
+            CategoriaID = idCategoria;
+            NomeCategoria = nomeCategoria;
         }
         #endregion
     }
