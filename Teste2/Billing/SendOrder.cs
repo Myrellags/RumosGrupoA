@@ -1,39 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
+
 
 namespace Ecommerce.Billing
 
 {
     public class SendOrder
     {
-        #region "Atributos"
-        private int _idSalesOrder;  //private int idPedidoVenda;
-        private int _idSendOrder;   //private int idEnvioOrdem;
-        private string _status;     //private string status;
-        #endregion
-
+        
         #region "Propriedades"
 
-        public int IdSalesOrder
-        {
-            get { return _idSalesOrder; }
-            set { _idSalesOrder = value; }
-        }
+        public int SendOrderID { get; set; }
+        [ForeignKey("SalesOrder")]
+        public int SalesOrderID { get; set; }
 
-        public int IdSendOrder
-        {
-            get { return _idSendOrder; }
-            set { _idSendOrder = value; }
-        }
-
-        public string Status
-        {
-            get { return _status; }
-            set { _status = value; }
-        }
+        public string Status { get; set; }
         #endregion
 
         #region "Construtores"
@@ -44,9 +25,9 @@ namespace Ecommerce.Billing
 
         public SendOrder(int idSalesOrder, int idSendOrder, string status)
         {
-            _idSalesOrder = idSalesOrder;
-            _idSendOrder = idSendOrder;
-            _status = status;
+            SalesOrderID = idSalesOrder;
+            SendOrderID = idSendOrder;
+            Status = status;
         }
 
         #endregion
