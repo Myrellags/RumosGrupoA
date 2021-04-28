@@ -12,9 +12,11 @@ namespace Ecommerce.Billing
 
         public int SendOrderID { get; set; }
         //[ForeignKey("SalesOrder")]
-        public int SalesOrderID { get; set; }
+        public int SalesOrderID { get; set; } //pertence a que modulo e class?
 
         public string Status { get; set; }
+
+      
         #endregion
 
         #region "Construtores"
