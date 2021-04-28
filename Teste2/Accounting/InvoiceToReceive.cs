@@ -12,7 +12,7 @@ namespace Ecommerce.Accounting
 
         public List<Billing.InvoicesReceivable> InvoicesReceivables { get; set; }
        
-        // public List<Billing.InvoiceOrder> InvoiceOrders { get; set; }
+        //public List<Billing.InvoiceOrder> InvoiceOrder { get; set; }
 
         #endregion
 

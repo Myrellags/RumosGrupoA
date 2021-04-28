@@ -11,7 +11,7 @@ namespace Ecommerce.Billing
 
         public int ProviderID { get; set; }
         //[ForeignKey("People")]
-        public int PeopleID { get; set; } //esta chave nao bate certo com a class people, n sera PersonID?
+        public int PersonID { get; set; } 
 
         public string Delete { get; set; }
         #endregion
