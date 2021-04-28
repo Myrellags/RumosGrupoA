@@ -1,27 +1,33 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Purchase
 {
-    public class InputInvoice // notas de encomenda 
+    [Table("InputInvoice")]
+    public class InputInvoice // guia de transporte
     {
         #region "Propriedades"
+        [Key]
         public int InputInvoiceID { get; set; }
-        //[ForeignKey("PurchaseRequest")] 
+        [ForeignKey("PurchaseRequest")] 
         public int PurchaseRequestID { get; set; }
+        [StringLength(60)] 
         public string NameProvider { get; set; }
+        [StringLength(60)] 
         public string MethodOfPayment { get; set; }
+        [StringLength(15)] //até 15 caracteres
         public string NumberII { get; set; }
         public DateTime DateII { get; set; }
+        [StringLength(60)] 
         public string NameProduct { get; set; }
         public int QtdProduct { get; set; }
         public double PriceProduct { get; set; }
         public double CampaignProvider { get; set; }
+        public virtual PurchaseRequest PurchaseRequest { get; set; }
 
-        public List<Purchase.PurchaseRequest> PurchaseRequests { get; set; }
-
-        public PurchaseRequest PurchaseRequest
+        public PurchaseRequest PurchaseRequest1
         {
             get => default;
             set

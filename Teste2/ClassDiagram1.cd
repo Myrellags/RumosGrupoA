@@ -2,14 +2,27 @@
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Ecommerce.Purchase.Quotation">
     <Position X="19.25" Y="9.5" Width="1.5" />
+    <AssociationLine Name="Provider" Type="Ecommerce.Billing.Provider" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="19.25" Y="12.011" />
+        <Point X="15.75" Y="12.011" />
+        <Point X="15.75" Y="14.75" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Product" Type="Ecommerce.Stock.Product" FixedFromPoint="true">
+      <Path>
+        <Point X="19.25" Y="11" />
+        <Point X="14.25" Y="11" />
+      </Path>
+    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>UAACAgAEAJAEAABAAAAAAAAAAAEAAAAABAEAAAAAAAQ=</HashCode>
+      <HashCode>UAACAgAEAJAGAABAAAAAAAAAAAEAAAAABAEAAAAAAAQ=</HashCode>
       <FileName>Purchase\Quotation.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
+      <Property Name="Provider" />
       <Property Name="MethodOfPayment" />
       <Property Name="Product" />
-      <Property Name="Provider" />
     </ShowAsAssociation>
   </Class>
   <Class Name="Ecommerce.Purchase.PurchaseRequest">
@@ -23,24 +36,24 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Ecommerce.Purchase.MethodOfPayment">
-    <Position X="19.25" Y="13.75" Width="1.5" />
+    <Position X="19.25" Y="14.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAABAAAAAAAACAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <HashCode>AAAAAAAAABAAAAAAAACAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Purchase\MethodOfPayment.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Ecommerce.Purchase.InputInvoice">
     <Position X="22" Y="6" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ARAAQggEAIAAAAAAAAAAACAgAAAAAAAAAAEAAAABAAA=</HashCode>
+      <HashCode>ARAAQggEAIAAAAAAAAAAACAgAAAAAAAAAIEAAAABAAA=</HashCode>
       <FileName>Purchase\InputInvoice.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="PurchaseRequest" />
+      <Property Name="PurchaseRequest1" />
     </ShowAsAssociation>
   </Class>
   <Class Name="Ecommerce.Personal.Person">
-    <Position X="4.75" Y="4.5" Width="1.5" />
+    <Position X="4.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>QAQCAQAAAAAAgAAYIEAAAAAABAoAAAAAAAIAAAEAAAI=</HashCode>
       <FileName>Personal\Person.cs</FileName>
@@ -48,6 +61,12 @@
   </Class>
   <Class Name="Ecommerce.Personal.User">
     <Position X="4.75" Y="9.5" Width="1.5" />
+    <AssociationLine Name="ShoppingCar" Type="Ecommerce.Billing.ShoppingCar" FixedFromPoint="true">
+      <Path>
+        <Point X="6.25" Y="11" />
+        <Point X="8" Y="11" />
+      </Path>
+    </AssociationLine>
     <TypeIdentifier>
       <HashCode>QAAAAAAAAAEAAAAAAAAAAAgAAgAAAAAAAEAAAAAAAAA=</HashCode>
       <FileName>Personal\User.cs</FileName>
@@ -60,7 +79,7 @@
   <Class Name="Ecommerce.Accounting.InvoiceToPay">
     <Position X="22" Y="10" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAQAgEAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAQAgEAAAAAACAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
       <FileName>Accounting\InvoiceToPay.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -68,16 +87,22 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Ecommerce.Accounting.InvoiceToReceive">
-    <Position X="9.75" Y="13" Width="1.5" />
+    <Position X="12.75" Y="21.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAIAAAEAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAIAAAEAAAAAAACAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Accounting\InvoiceToReceive.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Ecommerce.Billing.Costumer">
-    <Position X="4.75" Y="13" Width="1.5" />
+    <Position X="4.75" Y="18.25" Width="1.5" />
+    <AssociationLine Name="User" Type="Ecommerce.Personal.User" FixedFromPoint="true">
+      <Path>
+        <Point X="5.75" Y="18.25" />
+        <Point X="5.75" Y="11.569" />
+      </Path>
+    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAABAAAQAAAAAAAAAAAAAAgAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAABACAQAAAAAAAAAAAAAAgAAAEAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Billing\Costumer.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -85,21 +110,50 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Ecommerce.Stock.Category">
-    <Position X="9.5" Y="6.5" Width="1.5" />
+    <Position X="9.5" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAABAQAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
       <FileName>Stock\Category.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Ecommerce.Stock.IsOnSale">
-    <Position X="11.5" Y="13" Width="1.5" />
+    <Position X="12.75" Y="14.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EAAAAABAAQAAAEAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>EAAAAABAAQAAAEAAAgAAAAAAAAAAAAAAAAAAAAAQAAQ=</HashCode>
       <FileName>Stock\IsOnSale.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Ecommerce.Stock.Product">
-    <Position X="14.5" Y="9.75" Width="1.5" />
+    <Position X="12.75" Y="9.5" Width="1.5" />
+    <AssociationLine Name="Category" Type="Ecommerce.Stock.Category" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12.75" Y="9.688" />
+        <Point X="10.25" Y="9.688" />
+        <Point X="10.25" Y="7.44" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="SalesPrice" Type="Ecommerce.Stock.SalesPrice" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.75" Y="9.5" />
+        <Point X="13.75" Y="9.088" />
+        <Point X="15.25" Y="9.088" />
+        <Point X="15.25" Y="6.901" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Warehouse" Type="Ecommerce.Stock.Warehouse" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.25" Y="9.75" />
+        <Point X="17.25" Y="9.75" />
+        <Point X="17.25" Y="7.497" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Provider" Type="Ecommerce.Billing.Provider" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.25" Y="13.188" />
+        <Point X="15.156" Y="13.188" />
+        <Point X="15.156" Y="14.75" />
+      </Path>
+    </AssociationLine>
     <TypeIdentifier>
       <HashCode>EUABAIAMAABEAAAAAAAAAAAAAAEAAAAQCAQAEgAACEA=</HashCode>
       <FileName>Stock\Product.cs</FileName>
@@ -113,30 +167,38 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Ecommerce.Stock.TypeExit">
-    <Position X="12.75" Y="6.5" Width="1.5" />
+    <Position X="12.75" Y="4" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EAAAAABAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>EAAAAABAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAQAAQ=</HashCode>
       <FileName>Stock\TypeExit.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Ecommerce.Stock.Warehouse">
-    <Position X="16.25" Y="6.75" Width="1.5" />
+    <Position X="16.5" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
       <FileName>Stock\Warehouse.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Ecommerce.Stock.SalesPrice">
-    <Position X="14.5" Y="5.75" Width="1.5" />
+    <Position X="14.5" Y="4" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>BAABAAACAAAAAAAAAAAAAAAAAAEAAAAAAAAEAAQIAAA=</HashCode>
+      <HashCode>BAABAAACAAAAAAAAAAAAAAAAAAEAAAAAAAAEAAQIAAQ=</HashCode>
       <FileName>Stock\SalesPrice.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Ecommerce.Stock.Inventory">
-    <Position X="11.25" Y="6" Width="1.25" />
+    <Position X="11.25" Y="4" Width="1.25" />
+    <AssociationLine Name="Product" Type="Ecommerce.Stock.Product" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.844" Y="6.901" />
+        <Point X="11.844" Y="9.125" />
+        <Point X="13.25" Y="9.125" />
+        <Point X="13.25" Y="9.5" />
+      </Path>
+    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>EAACAABAAAAAAAAAAAAAAAABBAAAAAAAAIAAAQAAAAA=</HashCode>
+      <HashCode>EAACAABAAAAAAAAAAAAAAAABBAAAAAAAAIAAAQAQAAQ=</HashCode>
       <FileName>Stock\Inventory.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -144,44 +206,44 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Ecommerce.Billing.InvoiceOrder">
-    <Position X="8.5" Y="1" Width="1.5" />
+    <Position X="12.75" Y="18.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAABAgAAAA=</HashCode>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAQAAAAAAAAAABAgAAAA=</HashCode>
       <FileName>Billing\InvoiceOrder.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Ecommerce.Billing.InvoicesReceivable">
-    <Position X="11" Y="1" Width="1.5" />
+    <Position X="8.75" Y="18.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EQgAAgAEABAABAAAAAAAAAAAEAEAAAAAAAAAAQgAAAA=</HashCode>
+      <HashCode>EQgCAgAEAJEABAAAAAAAAAAAEgEAAAAAAAAAAQgAAAA=</HashCode>
       <FileName>Billing\InvoicesReceivable.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Ecommerce.Billing.Provider">
-    <Position X="13.5" Y="1" Width="1.5" />
+    <Position X="14.75" Y="14.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAQAAAEAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Billing\Provider.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Ecommerce.Billing.SendOrder">
-    <Position X="15.75" Y="1" Width="1.5" />
+    <Position X="16.5" Y="18.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAg=</HashCode>
       <FileName>Billing\SendOrder.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Ecommerce.Billing.ShoppingCar">
-    <Position X="18.5" Y="1" Width="1.5" />
+    <Position X="8" Y="9.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EQgCAgAAAJIAAAAAAAAAAAAAAAEAAAAAAAAAAAEAAAA=</HashCode>
+      <HashCode>EQgCAgAQAJAAAAAAAAAAAAAAAAEAAAAAAAAAAAEAAAA=</HashCode>
       <FileName>Billing\ShoppingCar.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Ecommerce.Billing.UnlockedStock">
-    <Position X="21.25" Y="1.5" Width="1.5" />
+    <Position X="10.75" Y="14.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EAAAAAAEAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>EAACAAAEAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Billing\UnlockedStock.cs</FileName>
     </TypeIdentifier>
   </Class>

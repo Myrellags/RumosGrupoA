@@ -9,7 +9,7 @@ namespace Ecommerce.Billing
     { 
         #region "Propriedades"
         public int ShoppingCarID { get; set; }
-        public int ClientID { get; set; } //client ID pertence a que modulo e class?
+        public int CostumerID { get; set; } 
         public int ProductID { get; set; }
         public int MethodOfPaymentID { get; set; }
         public int QuantityOfProdut { get; set; }
