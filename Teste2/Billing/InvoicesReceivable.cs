@@ -25,8 +25,8 @@ namespace Ecommerce.Billing
         public double DiscountCoupon { get; set; }
         public string Status { get; set; }
 
-        public List<Billing.Costumer> Costumer { get; set; }
-        public List<Stock.Product> Product { get; set; }
+        public List<Billing.Costumer> Costumers { get; set; }
+        public List<Stock.Product> Products { get; set; }
         public List<Billing.ShoppingCar> ShoppingCar { get; set; }
         public List<Purchase.MethodOfPayment> MethodOfPayment  { get; set; }
 

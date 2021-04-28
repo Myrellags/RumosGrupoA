@@ -11,7 +11,7 @@ namespace Ecommerce.Billing
 
         #region "Propriedades"
 
-        public int IoID { get; set; } // nao deveria ser InvoiceOrderID ?? a chamada da chave no invoicetopays esta assim
+        public int InvoiceOrderID { get; set; } 
         public int InvoicesReceivableID { get; set; }
         public string Status { get; set; }
         public List<Billing.InvoicesReceivable> InvoicesReceivable { get; set; }
@@ -25,7 +25,7 @@ namespace Ecommerce.Billing
 
         public InvoiceOrder(int idIO, int idInvoicesReceivable, string status)
         {
-            IoID = idIO;
+            InvoiceOrderID = idIO;
             InvoicesReceivableID = idInvoicesReceivable;
             Status = status;
         }
