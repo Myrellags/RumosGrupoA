@@ -208,21 +208,21 @@
   <Class Name="Ecommerce.Billing.InvoiceOrder">
     <Position X="12.75" Y="18.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAQAAAAAAAAAABAgAAAA=</HashCode>
+      <HashCode>AAAAAAAEAAAAAAACAAAAAAAAAQAAAAAAAAAAAAgAAAA=</HashCode>
       <FileName>Billing\InvoiceOrder.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Ecommerce.Billing.InvoicesReceivable">
     <Position X="8.75" Y="18.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EQgCAgAEAJEABAAAAAAAAAAAEgEAAAAAAAAAAQgAAAA=</HashCode>
+      <HashCode>EQgAAgAEAJEABAAAAAAAAAAAEgEAAAAAAAAAAQgAAAQ=</HashCode>
       <FileName>Billing\InvoicesReceivable.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Ecommerce.Billing.Provider">
     <Position X="14.75" Y="14.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAQAAAEAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>QAAAAAAAAAAEAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Billing\Provider.cs</FileName>
     </TypeIdentifier>
   </Class>
