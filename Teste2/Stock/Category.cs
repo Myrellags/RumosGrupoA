@@ -9,7 +9,7 @@ namespace Ecommerce.Stock
 
         public int CategoriaID { get; set; }
         public string NomeCategoria { get; set; }
-        //public Ecommerce.Stock.Category Category1
+        public Ecommerce.Stock.Category Category1
         {
             get => default;
             set
