@@ -6,7 +6,7 @@ namespace Ecommerce.Personal
     {
         #region "PROPRIEDADES USER"
         public int UserID { get; set; }
-        public int PersonnID { get; set; }
+        public int PersonID { get; set; }
         public string PassUser { get; set; }
 
         public Billing.ShoppingCar ShoppingCar
@@ -35,7 +35,7 @@ namespace Ecommerce.Personal
         public User(int userId, int personId, string passUser)
         {
             UserID = userId;
-            PersonnID = personId;
+            PersonID = personId;
             PassUser = passUser;
         }
         #endregion

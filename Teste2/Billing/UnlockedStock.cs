@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Billing
@@ -10,10 +11,11 @@ namespace Ecommerce.Billing
 
         public int UnlockedID { get; set; }
 
-        //[ForeignKey("ProductI")]
+        //[ForeignKey("Product")]
         public int ProductID { get; set; }
         public string Status { get; set; }
-        
+        public List<Stock.Product> Product { get; set; }
+
         #endregion
 
         #region "Construtores"
