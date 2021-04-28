@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Billing
@@ -13,7 +14,7 @@ namespace Ecommerce.Billing
         public int CustomerID { get; set; }
         //[ForeignKey("Product")]
         public int ProductID { get; set; }
-        [//ForeignKey("ShoppingCar")]
+        //ForeignKey("ShoppingCar")]
         public int ShoppingCarID { get; set; }
         //[ForeignKey("MethodOfPayment")]
         public int MethodOfPaymentID { get; set; }
@@ -23,10 +24,16 @@ namespace Ecommerce.Billing
         public string Delete { get; set; }
         public double DiscountCoupon { get; set; }
         public string Status { get; set; }
-        #endregion
 
-        #region "construtores PEDIDOS DE VENDA"
-        public InvoicesReceivable()
+        public List<Billing.Costumer> Costumer { get; set; }
+        public List<Stock.Product> Product { get; set; }
+        public List<Billing.ShoppingCar> ShoppingCar { get; set; }
+        public List<Purchase.MethodOfPayment> MethodOfPayment  { get; set; }
+
+    #endregion
+
+    #region "construtores PEDIDOS DE VENDA"
+    public InvoicesReceivable()
         {
 
         }

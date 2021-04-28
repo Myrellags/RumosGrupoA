@@ -6,7 +6,7 @@ namespace Ecommerce.Personal
     {
         #region "PROPRIEDADES USER"
         public int UserID { get; set; }
-        public int PersonID { get; set; }
+        public int PersonID { get; set; } // atributo no PERSON TAMBEM
         public string PassUser { get; set; }
 
         public Billing.ShoppingCar ShoppingCar
