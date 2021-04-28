@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Ecommerce.Accounting
 {
@@ -8,6 +9,11 @@ namespace Ecommerce.Accounting
         public int InvoiceToReceiveID { get; set; }
         public int InvoiceOrderID { get; set; }
         public bool Status { get; set; }
+
+        public List<Billing.InvoicesReceivable> InvoicesReceivables { get; set; }
+       
+        // public List<Billing.InvoiceOrder> InvoiceOrders { get; set; }
+
         #endregion
 
         #region "Construtores InvoiceToReceive"

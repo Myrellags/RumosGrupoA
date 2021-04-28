@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Accounting
@@ -7,9 +8,11 @@ namespace Ecommerce.Accounting
     {
         #region "Propriedades"
         public int InvoiceToPayID { get; set; }
-        [ForeignKey("InputInvoice")]
+        //[ForeignKey("InputInvoice")]
         public int InputInvoiceID { get; set; }
         public bool Status { get; set; }
+
+        public List<Purchase.InputInvoice> InputInvoices { get; set; }
 
         public Purchase.InputInvoice InputInvoice
         {
