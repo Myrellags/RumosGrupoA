@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Purchase
@@ -17,6 +18,8 @@ namespace Ecommerce.Purchase
         public int QtdProduct { get; set; }
         public double PriceProduct { get; set; }
         public double CampaignProvider { get; set; }
+
+        public List<Purchase.PurchaseRequest> PurchaseRequests { get; set; }
 
         public PurchaseRequest PurchaseRequest
         {
