@@ -1,20 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 
 namespace Ecommerce.Billing
 
 {
-    class InvoiceOrder
+    [Table("InvoiceOrders")]
+    public class InvoiceOrder
     {
 
         #region "Propriedades"
 
-        public int InvoiceOrderID { get; set; } 
+        [Key]
+        public int InvoiceOrderID { get; set; }
+        [ForeignKey("InvoicesReceivable")] 
         public int InvoicesReceivableID { get; set; }
         public string Status { get; set; }
-        public List<Billing.InvoicesReceivable> InvoicesReceivable { get; set; }
+
+        public InvoicesReceivable InvoicesReceivable1
+        {
+            get => default;
+            set
+            {
+            }
+        }
         #endregion
 
         #region "Construtores"

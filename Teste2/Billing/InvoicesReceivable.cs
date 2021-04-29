@@ -1,22 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Billing
 
 {
+    [Table("InvoicesReceivables")]
     public class InvoicesReceivable // Pedidos de Venda 
     {
 
         #region "PROPRIEDADES PEDIDOS DE VENDA" 
+        [Key]
         public int InvoicesReceivableID { get; set; }
-        //[ForeignKey("Customer")]
+        [ForeignKey("Customer")]
         public int CustomerID { get; set; }
-        //[ForeignKey("Product")]
+        [ForeignKey("Product")]
         public int ProductID { get; set; }
-        //ForeignKey("ShoppingCar")]
+        [ForeignKey("ShoppingCar")]
         public int ShoppingCarID { get; set; }
-        //[ForeignKey("MethodOfPayment")]
+        [ForeignKey("MethodOfPayment")]
         public int MethodOfPaymentID { get; set; }
         public int AmountProduct { get; set; }
         public double PriceProduct { get; set; }
@@ -24,16 +27,20 @@ namespace Ecommerce.Billing
         public string Delete { get; set; }
         public double DiscountCoupon { get; set; }
         public string Status { get; set; }
+        public virtual ICollection<Stock.Product> Products { get; set; }
 
-        public List<Billing.Costumer> Costumers { get; set; }
-        public List<Stock.Product> Products { get; set; }
-        public List<Billing.ShoppingCar> ShoppingCar { get; set; }
-        public List<Purchase.MethodOfPayment> MethodOfPayment  { get; set; }
+        public Costumer Costumer
+        {
+            get => default;
+            set
+            {
+            }
+        }
 
-    #endregion
+        #endregion
 
-    #region "construtores PEDIDOS DE VENDA"
-    public InvoicesReceivable()
+        #region "construtores PEDIDOS DE VENDA"
+        public InvoicesReceivable()
         {
 
         }

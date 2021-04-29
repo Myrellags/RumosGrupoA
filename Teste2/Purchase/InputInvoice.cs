@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Purchase
 {
-    [Table("InputInvoice")]
+    [Table("InputInvoices")]
     public class InputInvoice // guia de transporte
     {
         #region "Propriedades"

@@ -1,22 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Billing
 
 {
-    public class Provider
+    [Table("Providers")]
+    public class Provider : Personal.Person
     { 
         #region "Propriedades"
 
+        [Key]
         public int ProviderID { get; set; }
-        //[ForeignKey("People")]
+        [ForeignKey("Person")]
         public int PersonID { get; set; } 
-
         public string Delete { get; set; }
         #endregion
-
-        //public List<Personal.Person.PersonID> PersonID { get; set; }
 
         #region "Construtores"
         public Provider()
@@ -24,10 +24,10 @@ namespace Ecommerce.Billing
 
         }
 
-        public Provider (int idProvider, int idPeople, string delete)
+        public Provider (int idProvider, int idPerson, string delete)
         {
             ProviderID = idProvider;
-            PeopleID = idPeople;
+            PersonID = idPerson;
             Delete = delete;
         }
 

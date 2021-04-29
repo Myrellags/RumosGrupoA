@@ -1,17 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Billing
 {
+    [Table("Costumers")]
     public class Costumer
     {
         #region "Propriedades"
 
+        [Key]
         public int CostumerID { get; set; }
+        [ForeignKey("User")] 
         public int UserID { get; set; }
         public string Delete { get; set; }
 
-        public List<Personal.User> Users { get; set; }
 
         public Personal.User User
         {

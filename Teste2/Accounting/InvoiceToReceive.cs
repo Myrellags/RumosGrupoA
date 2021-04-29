@@ -1,18 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Accounting
 {
+    [Table("InvoiceToReceives")]
     public class InvoiceToReceive // CONTAS A Receber
     {
         #region "Propriedades InvoiceToReceive"
+        [Key]
         public int InvoiceToReceiveID { get; set; }
+        [ForeignKey("InvoiceOrder")] 
         public int InvoiceOrderID { get; set; }
         public bool Status { get; set; }
 
-        public List<Billing.InvoicesReceivable> InvoicesReceivables { get; set; }
-       
-        //public List<Billing.InvoiceOrder> InvoiceOrder { get; set; }
+        public Billing.InvoiceOrder InvoiceOrder
+        {
+            get => default;
+            set
+            {
+            }
+        }
 
         #endregion
 

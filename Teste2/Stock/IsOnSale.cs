@@ -21,6 +21,14 @@ namespace Ecommerce.Stock
         public List<Stock.Product> Products { get; set; }
         public List<Stock.Warehouse> Warehouses { get; set; }
 
+        public Product Product
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         #endregion
 
         #region "Construtores"

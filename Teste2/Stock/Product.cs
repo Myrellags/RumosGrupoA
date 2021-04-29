@@ -25,23 +25,8 @@ namespace Ecommerce.Stock
             }
         }
 
-        public Stock.Inventory Inventory1
-        {
-            get => default(Stock.Inventory);
-            set
-            {
-            }
-        }
 
         public Category Category
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        public TypeExit TypeExit
         {
             get => default;
             set
@@ -58,14 +43,6 @@ namespace Ecommerce.Stock
         }
 
         public Warehouse Warehouse
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        public Billing.Provider Provider
         {
             get => default;
             set

@@ -1,22 +1,32 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 
 namespace Ecommerce.Billing
 
 {
+    [Table("SendOrders")]
     public class SendOrder
     {
         
         #region "Propriedades"
 
+        [Key]
         public int SendOrderID { get; set; }
-        //[ForeignKey("SalesOrder")]
-        public int SalesOrderID { get; set; } //pertence a que modulo e class?
-
+        [ForeignKey("InvoiceOrder")]
+        public int InvoiceOrderID { get; set; } 
         public string Status { get; set; }
 
-      
+        public InvoiceOrder InvoiceOrder
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+
         #endregion
 
         #region "Construtores"
@@ -25,9 +35,9 @@ namespace Ecommerce.Billing
 
         }
 
-        public SendOrder(int idSalesOrder, int idSendOrder, string status)
+        public SendOrder(int invoiceOrderID, int idSendOrder, string status)
         {
-            SalesOrderID = idSalesOrder;
+            InvoiceOrderID = invoiceOrderID;
             SendOrderID = idSendOrder;
             Status = status;
         }

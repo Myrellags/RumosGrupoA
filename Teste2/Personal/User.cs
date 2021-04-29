@@ -6,24 +6,8 @@ namespace Ecommerce.Personal
     {
         #region "PROPRIEDADES USER"
         public int UserID { get; set; }
-        public int PersonID { get; set; } // atributo no PERSON TAMBEM
+        //public int PersonID { get; set; } // Heranca
         public string PassUser { get; set; }
-
-        public Billing.ShoppingCar ShoppingCar
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        public Billing.Costumer Costumer
-        {
-            get => default;
-            set
-            {
-            }
-        }
 
         #endregion
 

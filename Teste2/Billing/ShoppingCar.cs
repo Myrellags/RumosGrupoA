@@ -1,16 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Billing
 
 {
+    [Table("ShoppingCars")]
     public class ShoppingCar
-    { 
+    {
         #region "Propriedades"
+        [Key] 
         public int ShoppingCarID { get; set; }
-        public int CostumerID { get; set; } 
+        [ForeignKey("Costumer")]
+        public int CostumerID { get; set; }
+        [ForeignKey("Product")]
         public int ProductID { get; set; }
+        [ForeignKey("MethodOfPayment")]
         public int MethodOfPaymentID { get; set; }
         public int QuantityOfProdut { get; set; }
         public double PriceProduct { get; set; }
@@ -18,11 +24,15 @@ namespace Ecommerce.Billing
         public string Delete { get; set; }
 
 
-        //public Ecommerce.Stock.Product Product;
-        //public Ecommerce.Purchase.MethodOfPayment MethodOfPayment;
+        public virtual ICollection<Stock.Product> Products { get; set; }
 
-        public List<Stock.Product> Product { get; set; }
-        public List<Purchase.MethodOfPayment> MethodOfPayment { get; set; }
+        public Personal.User User
+        {
+            get => default;
+            set
+            {
+            }
+        }
 
 
 
@@ -32,11 +42,11 @@ namespace Ecommerce.Billing
         public ShoppingCar()
         {
         }
-        public ShoppingCar(int idShoppingCar, int idClient, int idProduct, int idMethodOfPayment,
+        public ShoppingCar(int idShoppingCar, int idCostumer, int idProduct, int idMethodOfPayment,
                 int quantityProduct, double priceProduct, double weightProduct, string delete)
         {
             ShoppingCarID = idShoppingCar;
-            ClientID = idClient;
+            CostumerID = idCostumer;
             ProductID = idProduct;
             MethodOfPaymentID = idMethodOfPayment;
             QuantityOfProdut = quantityProduct;
