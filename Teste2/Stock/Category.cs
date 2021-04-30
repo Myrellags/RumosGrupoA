@@ -1,14 +1,16 @@
 ﻿using System;
-
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Stock
 {
+    [Table("Category")]
     public class Category
     {
         #region "Propriedades Category"
 
         public int CategoriaID { get; set; }
         public string NomeCategoria { get; set; }
+
         public Ecommerce.Stock.Category Category1
         {
             get => default;

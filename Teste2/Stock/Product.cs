@@ -1,8 +1,10 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Stock
 {
-	public class Product
+    [Table("Product")]
+    public class Product
 	{ 
 		#region "PROPRIEDADES PRODUCT"
 		public int ProductID { get; set; }

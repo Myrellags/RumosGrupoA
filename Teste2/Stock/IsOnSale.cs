@@ -1,18 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Stock
 {
+    [Table("IsOnSale")]
     public class IsOnSale
     {
         #region "Propriedades"
+        [Key]
         public int IsOnSaleID { get; set; }
 
-        //[ForeignKey("Product")]
+        [ForeignKey("Product")]
         public int ProductID { get; set; }
 
-        //[ForeignKey("Warehouse")]
+        [ForeignKey("Warehouse")]
         public int WarehouseID { get; set; }
 
         public double CostProduct { get; set; }

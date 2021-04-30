@@ -1,14 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Stock
+
 {
+    [Table("Inventory")]
     public class Inventory
     {
         #region "PROPRIEDADES INVENTORY"
+        [Key]
         public int InventoryID { get; set; }
+        [ForeignKey("Product")]
         public int ProductID { get; set; }
+        [ForeignKey("Warehouse")]
         public int WarehouseID { get; set; }
         public string ProductDescription { get; set; }
         public string NameInventor { get; set; }
