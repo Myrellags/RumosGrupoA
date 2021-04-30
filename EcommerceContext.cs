@@ -9,6 +9,7 @@ public class EcommerceContext : DBContext
 	public DbSet<Costumer> Costumers { get; set; }
 	public DbSet<InvoiceOrder> InvoiceOrders { get; set; }
 	public DbSet<InvoicesReceivable> InvoicesReceivables { get; set; }
+	public DbSet<ProductsShoppingCar> ProductsShoppingCars { get; set; }
 	public DbSet<Provider> Providers { get; set; }
 	public DbSet<SendOrder> SendOrders { get; set; }
 	public DbSet<ShoppingCar> ShoppingCars { get; set; }
@@ -20,7 +21,6 @@ public class EcommerceContext : DBContext
 	public DbSet<IsOnSale> IsOnSales { get; set; }
 	public DbSet<Product> Products { get; set; }
 	public DbSet<SalesPrice> SalesPrices { get; set; }
-	public DbSet<TypeExit> TypeExits { get; set; }
 	public DbSet<Warehouse> Warehouses { get; set; }
 	public DbSet<Quotation> Quotations { get; set; }
 	public DbSet<PurchaseRequest> PurchaseRequests { get; set; }
@@ -34,5 +34,15 @@ public class EcommerceContext : DBContext
 	{
 		optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=BDEcommerce;Trusted_Connection=True;");
 	}
-    #endregion
+	#endregion
+
+	#region "Enforce On Delete ForeignKey"
+	protected override void OnModelCreating(ModelBuilder modelBuilder)
+	{
+		foreach (var foreignKey in modelBuilder.Model.GetEntityTypes().SelectMany(e => e.GetForeignKeys()))
+		{
+			foreignKey.DeleteBehavior = DeleteBehavior.NoAction;
+		}
+	}
+	#endregion
 }
