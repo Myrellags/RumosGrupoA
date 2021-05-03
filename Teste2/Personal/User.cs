@@ -11,7 +11,6 @@ namespace Ecommerce.Personal
         #region "PROPRIEDADES USER"
         [Key]
         public int UserID { get; set; }
-        //public int PersonID { get; set; } // Heranca
         [Required]
         public string LoginUser { get; set; }
         public string PassUser { get; set; }
