@@ -5,22 +5,29 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Stock
 {
-    [Table("SalesPrice")]
+    [Table("SalesPrices")] //colocar no plural
     public class SalesPrice
     {
-        [Key]
-        #region "Propriedades SALESPRICE"
-        public double PurchaseProduct { get; set; }
-        public double PriceSellProduct { get; set; }
+        //[Key]//Rogério vou fazer algumas alterações neste código Ass Myrella
+        //#region "Propriedades SALESPRICE"
+        //public double PurchaseProduct { get; set; }
+        //public double PriceSellProduct { get; set; }
 
+        #region "Propriedades SALESPRICE"
+        [Key]
+        public int SalesPriceID { get; set; }
         [ForeignKey("Product")]
         public int ProdutoID { get; set; }
+        [Required] 
+        public double PriceSellProduct { get; set; }
+        [Required] 
         public double CostsProduct { get; set; }
         public double CostsOthers { get; set; }
         public string TypeOfCosts { get; set; }
         public string Delete { get; set; }
 
-        public List<Stock.Product> Products { get; set; }
+        public virtual ICollection<Stock.Product> Products { get; set; }
+        //public List<Stock.Product> Products { get; set; }Rogério vamos utilizar collection Virtual Ass Myrella
 
         #endregion
 
@@ -30,13 +37,12 @@ namespace Ecommerce.Stock
         {
 
         }
-        public SalesPrice(double pricePurchaseProduct, double priceSellProduct, int idProduto, double costsOthers, string typeOfCosts, string delete, double costsproduct)
+        public SalesPrice(int idProduto, double priceSellProduct, double costsProduct, double costsOthers, string typeOfCosts, string delete)
         {
-            PurchaseProduct = pricePurchaseProduct;
-            PriceSellProduct = priceSellProduct;
             ProdutoID = idProduto;
-            CostsProduct = costsproduct; 
-               CostsOthers = costsOthers;
+            PriceSellProduct = priceSellProduct; 
+            CostsProduct = costsProduct;
+            CostsOthers = costsOthers;
             TypeOfCosts = typeOfCosts;
             Delete = delete;
         }

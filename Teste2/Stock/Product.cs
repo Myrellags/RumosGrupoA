@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Stock
 {
-    [Table("Product")]
+    [Table("Products")]
     public class Product
 	{ 
 		#region "PROPRIEDADES PRODUCT"
@@ -72,8 +72,8 @@ namespace Ecommerce.Stock
 			PriceSellProduct = priceSellProduct;
 			CategoryProduct = categoryProduct;
 			Delete = delete;
-			WarehouseProduct = warehouseProduct;
-		}
+			//WarehouseProduct = warehouseProduct;//Não entendi porque... ass: Myrella
+  		}
 		#endregion
 
 	}

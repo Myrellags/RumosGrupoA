@@ -5,24 +5,23 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Stock
 {
-    [Table("IsOnSale")]
+    [Table("IsOnSales")]
     public class IsOnSale
     {
         #region "Propriedades"
         [Key]
         public int IsOnSaleID { get; set; }
-
         [ForeignKey("Product")]
         public int ProductID { get; set; }
-
         [ForeignKey("Warehouse")]
         public int WarehouseID { get; set; }
-
+        [Required] 
         public double CostProduct { get; set; }
+        [Required] 
         public double ValueSalePercent { get; set; }
 
-        public List<Stock.Product> Products { get; set; }
-        public List<Stock.Warehouse> Warehouses { get; set; }
+        public virtual ICollection<Stock.Product> Products { get; set; }
+        //public List<Stock.Warehouse> Warehouses { get; set; }
 
         public Product Product
         {

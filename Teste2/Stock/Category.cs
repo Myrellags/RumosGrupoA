@@ -1,15 +1,19 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Stock
 {
-    [Table("Category")]
+    [Table("Categorys")]
     public class Category
     {
         #region "Propriedades Category"
 
-        public int CategoriaID { get; set; }
-        public string NomeCategoria { get; set; }
+        [Key]
+        public int CategoryID { get; set; }
+        [Required] // => na BD a coluna vai ser gerada com nullable: false
+        [StringLength(60)] // => na BD a coluna vai ser gerada com tipo de dados nvarchar(60)
+        public string NameCategory { get; set; }
 
         public Ecommerce.Stock.Category Category1
         {
@@ -26,10 +30,10 @@ namespace Ecommerce.Stock
 
         }
 
-        public Category(int idCategoria, string nomeCategoria)
+        public Category(int categoryID, string nameCategory)
         {
-            CategoriaID = idCategoria;
-            NomeCategoria = nomeCategoria;
+            CategoryID = categoryID;
+            NameCategory = nameCategory;
         }
         #endregion
     }

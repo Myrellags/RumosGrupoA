@@ -2,6 +2,7 @@
 
 namespace Ecommerce.Personal
 {
+    //[Index(nameof(NIF), IsUnique = true)]
     public class Person
     {
 

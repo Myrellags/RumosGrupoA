@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Ecommerce.Stock
 
 {
-    [Table("Inventory")]
+    [Table("Inventorys")]
     public class Inventory
     {
         #region "PROPRIEDADES INVENTORY"
@@ -17,11 +17,14 @@ namespace Ecommerce.Stock
         [ForeignKey("Warehouse")]
         public int WarehouseID { get; set; }
         public string ProductDescription { get; set; }
-        public string NameInventor { get; set; }
+        [Required]
+        [StringLength(60)]
+        public string NameInventory { get; set; }
+        [Required] 
         public int NewQuantity { get; set; }
 
-        public List<Stock.Product> Products { get; set; }
-        public List<Stock.Warehouse> Warehouses { get; set; }
+        public virtual ICollection<Stock.Product> Products { get; set; }
+        //public List<Stock.Product> Products { get; set; }
 
         public Product Product
         {
@@ -45,7 +48,7 @@ namespace Ecommerce.Stock
             ProductID = idProduct;
             WarehouseID = idWarehouse;
             ProductDescription = productDescription;
-            NameInventor = nameInventory;
+            NameInventory = nameInventory;
             NewQuantity = newQuantity;
         }
         #endregion

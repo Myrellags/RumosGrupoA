@@ -12,8 +12,9 @@ namespace Ecommerce.Billing
 
         [Key]
         public int CostumerID { get; set; }
-        [ForeignKey("User")] 
-        public int UserID { get; set; }
+        [ForeignKey("User")]
+        [Required] 
+        public int LoginUser { get; set; }
         public string Delete { get; set; }
 
 
@@ -33,10 +34,10 @@ namespace Ecommerce.Billing
 
         }
 
-        public Costumer(int idCostumer, int idUser, string delete)
+        public Costumer(int idCostumer, int loginUser, string delete)
         {
             CostumerID = idCostumer;
-            UserID = idUser;
+            LoginUser = loginUser;
             Delete = delete;
         }
         #endregion
