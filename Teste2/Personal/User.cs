@@ -23,6 +23,11 @@ namespace Ecommerce.Personal
         {
 
         }
+
+    public Index()
+        {
+
+        }
         public User(int userId, string loginUser, string passUser)
         {
             UserID = userId;

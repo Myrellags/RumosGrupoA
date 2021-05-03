@@ -18,7 +18,8 @@ namespace Ecommerce.Stock
         public int SalesPriceID { get; set; }
         [ForeignKey("Product")]
         public int ProdutoID { get; set; }
-        [Required] 
+        [Required]
+        // public virtual Product Products { get; set; }
         public double PriceSellProduct { get; set; }
         [Required] 
         public double CostsProduct { get; set; }

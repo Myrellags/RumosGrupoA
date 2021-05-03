@@ -7,7 +7,7 @@ namespace Ecommerce.Personal
     {
 
         #region "propriedades"
-        public int PersonID { get; set; }
+        // public int PersonID { get; set; }
         public string Surname { get; set; }
         public string Site { get; set; }
         public string NIF { get; set; }

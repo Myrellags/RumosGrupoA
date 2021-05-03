@@ -14,8 +14,10 @@ namespace Ecommerce.Stock
         public int InventoryID { get; set; }
         [ForeignKey("Product")]
         public int ProductID { get; set; }
+        // public virtual Product Products { get; set; }
         [ForeignKey("Warehouse")]
         public int WarehouseID { get; set; }
+        // public virtual Warehouse Warehouses { get; set; }
         public string ProductDescription { get; set; }
         [Required]
         [StringLength(60)]

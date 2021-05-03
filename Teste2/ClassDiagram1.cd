@@ -57,14 +57,14 @@
   <Class Name="Ecommerce.Personal.Person">
     <Position X="4.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>QAQCAQAAAAAAgAAYIEAAAAAABAoAAAAAAAIAAAEAAAI=</HashCode>
+      <HashCode>AAQCAQAAAAAAgAAYIEAAAAAABAoAAAAAAAIAAAEAAAI=</HashCode>
       <FileName>Personal\Person.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Ecommerce.Personal.User">
     <Position X="4.75" Y="9.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAEAAAAAAAAE=</HashCode>
       <FileName>Personal\User.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -90,14 +90,8 @@
   </Class>
   <Class Name="Ecommerce.Billing.Costumer">
     <Position X="4.75" Y="18.25" Width="1.5" />
-    <AssociationLine Name="User" Type="Ecommerce.Personal.User" FixedFromPoint="true">
-      <Path>
-        <Point X="5.75" Y="18.25" />
-        <Point X="5.75" Y="11.377" />
-      </Path>
-    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAABAAAQAAAAAAAAAAAAAAgAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAABAAAQAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAE=</HashCode>
       <FileName>Billing\Costumer.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -107,14 +101,14 @@
   <Class Name="Ecommerce.Stock.Category">
     <Position X="9.5" Y="5.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAABAQAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <HashCode>AAAAACACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
       <FileName>Stock\Category.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Ecommerce.Stock.IsOnSale">
     <Position X="12.75" Y="14.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EAACAABAAQAAAEAAAgAAAAAAAAAAAAAAAAAAAAAQAAQ=</HashCode>
+      <HashCode>EAACAABAAQAAAEAAAgAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>Stock\IsOnSale.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -126,6 +120,8 @@
     <AssociationLine Name="Category" Type="Ecommerce.Stock.Category" FixedFromPoint="true" FixedToPoint="true">
       <Path>
         <Point X="12.75" Y="9.679" />
+        <Point X="12.365" Y="9.679" Type="JumpStart" />
+        <Point X="12.198" Y="9.679" Type="JumpEnd" />
         <Point X="10.25" Y="9.679" />
         <Point X="10.25" Y="7.44" />
       </Path>
@@ -136,15 +132,6 @@
         <Point X="13.75" Y="9.088" />
         <Point X="15.25" Y="9.088" />
         <Point X="15.25" Y="6.901" />
-      </Path>
-    </AssociationLine>
-    <AssociationLine Name="Warehouse" Type="Ecommerce.Stock.Warehouse" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="14.25" Y="9.738" />
-        <Point X="15.417" Y="9.738" Type="JumpStart" />
-        <Point X="15.583" Y="9.738" Type="JumpEnd" />
-        <Point X="17.25" Y="9.738" />
-        <Point X="17.25" Y="7.497" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
@@ -160,29 +147,21 @@
   <Class Name="Ecommerce.Stock.Warehouse">
     <Position X="16.5" Y="5.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAQ=</HashCode>
       <FileName>Stock\Warehouse.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Ecommerce.Stock.SalesPrice">
     <Position X="14.5" Y="4" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>BAABAAACAAAAAAAAAAAAAAAAAAEAAAAAAAAEAAQIAAQ=</HashCode>
+      <HashCode>BAABAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAEAAQIgAQ=</HashCode>
       <FileName>Stock\SalesPrice.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Ecommerce.Stock.Inventory">
     <Position X="11.25" Y="4" Width="1.25" />
-    <AssociationLine Name="Product" Type="Ecommerce.Stock.Product" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="11.844" Y="6.901" />
-        <Point X="11.844" Y="9.125" />
-        <Point X="13.25" Y="9.125" />
-        <Point X="13.25" Y="9.5" />
-      </Path>
-    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>EAACAABAAAAAAAAAAAAAAAABBAAAAAAAAIAAAQAQAAQ=</HashCode>
+      <HashCode>EAACAABAAAAAAAAAAAAAAAABBAAAAAAAAAAAAQAAAAU=</HashCode>
       <FileName>Stock\Inventory.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>

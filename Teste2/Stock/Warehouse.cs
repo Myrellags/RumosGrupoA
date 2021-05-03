@@ -12,7 +12,8 @@ namespace Ecommerce.Stock
         #region "Propriedades Warehouse"
         [Key]
         public int WarehouseID { get; set; }
-        [Required] 
+        [Required]
+        // public virtual Warehouse Warehouses { get; set; }
         public string DescriptionWarehouse { get; set; }
 
         public virtual ICollection<Stock.Product> Products { get; set; }

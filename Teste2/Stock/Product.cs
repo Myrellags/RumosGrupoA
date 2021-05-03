@@ -5,10 +5,12 @@ namespace Ecommerce.Stock
 {
     [Table("Products")]
     public class Product
-	{ 
-		#region "PROPRIEDADES PRODUCT"
-		public int ProductID { get; set; }
-		public string NameProduct { get; set; }
+	{
+        #region "PROPRIEDADES PRODUCT"
+        [ForeignKey("Product")]
+        public int ProductID { get; set; }
+        // public virtual Product Products { get; set; }
+        public string NameProduct { get; set; }
 		public string DescriptionProduct { get; set; }
 		public string TypeProduct { get; set; }
 		public double WeightProduct { get; set; }

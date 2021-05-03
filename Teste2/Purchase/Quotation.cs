@@ -12,10 +12,13 @@ namespace Ecommerce.Purchase
         public int QuotationID { get; set; }
         [ForeignKey("Provider")]
         public int ProviderID { get; set; }
+        // public virtual Provider Providers { get; set; }
         [ForeignKey("Product")]
         public int ProductID { get; set; }
+        // public virtual Product Products { get; set; }
         [ForeignKey("MethodOfPayment")]
         public int MethodOfPaymentID { get; set; }
+        // public virtual MethodOfPayment MethodOfPayments { get; set; }
         [Required]
         [StringLength(60)] 
         public string NameUser { get; set; }

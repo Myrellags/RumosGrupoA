@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Ecommerce.Accounting
 {
     [Table("InvoiceToReceives")]
-    [Index(nameof(InvoiceToReceiveID), IsUnique = true)]
+    //[Index(nameof(InvoiceToReceiveID), IsUnique = true)]
     public class InvoiceToReceive // CONTAS A Receber
     {
         #region "Propriedades InvoiceToReceive"
