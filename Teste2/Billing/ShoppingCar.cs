@@ -14,10 +14,13 @@ namespace Ecommerce.Billing
         public int ShoppingCarID { get; set; }
         [ForeignKey("Costumer")]
         public int CostumerID { get; set; }
+        //public virtual Costumer Costumers { get; set; }
         [ForeignKey("Product")]
         public int ProductID { get; set; }
+        //public virtual Product Products { get; set; }
         [ForeignKey("MethodOfPayment")]
         public int MethodOfPaymentID { get; set; }
+        //public virtual MethodOfPayment MethodOfPayments { get; set; }
         public int QuantityOfProdut { get; set; }
         public double PriceProduct { get; set; }
         public double WeightProduct { get; set; }

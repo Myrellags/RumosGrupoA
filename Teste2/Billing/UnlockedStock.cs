@@ -15,6 +15,7 @@ namespace Ecommerce.Billing
         public int UnlockedID { get; set; }
         [ForeignKey("Product")]
         public int ProductID { get; set; }
+        //public virtual Product Products { get; set; }
         public string Status { get; set; }
         public virtual ICollection<Stock.Product> Products { get; set; }
 

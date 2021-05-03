@@ -13,8 +13,6 @@ namespace Ecommerce.Billing
 
         [Key]
         public int ProviderID { get; set; }
-        [ForeignKey("Person")]
-        public int PersonID { get; set; } 
         public string Delete { get; set; }
         #endregion
 
@@ -24,10 +22,9 @@ namespace Ecommerce.Billing
 
         }
 
-        public Provider (int idProvider, int idPerson, string delete)
+        public Provider (int idProvider, string delete)
         {
             ProviderID = idProvider;
-            PersonID = idPerson;
             Delete = delete;
         }
 

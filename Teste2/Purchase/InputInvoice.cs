@@ -13,6 +13,7 @@ namespace Ecommerce.Purchase
         public int InputInvoiceID { get; set; }
         [ForeignKey("PurchaseRequest")] 
         public int PurchaseRequestID { get; set; }
+        //public virtual PurchaseRequest PurchaseRequests { get; set; }
         [StringLength(60)] 
         public string NameProvider { get; set; }
         [StringLength(60)] 
