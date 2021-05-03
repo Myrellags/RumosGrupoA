@@ -6,13 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{6E141223-1913-4C9A-B5CC-76B0863EDE1F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAO", "DAO", "{C7003B6E-DF96-4EA0-A910-1D6AE986673D}"
-	ProjectSection(SolutionItems) = preProject
-		InputInvoiceDAO.cs = InputInvoiceDAO.cs
-		ProductDAO.cs = ProductDAO.cs
-		QuotationDAO.cs = QuotationDAO.cs
-		SalesPriceDAO.cs = SalesPriceDAO.cs
-		UserDAO.cs = UserDAO.cs
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controllers", "Controllers", "{2BFA1CE7-C35E-4D3E-9A7C-157B2A7BFF75}"
 	ProjectSection(SolutionItems) = preProject
@@ -24,15 +17,26 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{2C346EEB
 		EcommerceContext.cs = EcommerceContext.cs
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Billing", "Billing", "{D8D7BA32-9960-4040-BCCA-1B2C231FC651}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BillingDAO", "BillingDAO", "{D8D7BA32-9960-4040-BCCA-1B2C231FC651}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Accounting", "Accounting", "{E17FDDA8-6941-4DB7-A085-10B9211714EE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AccountingDAO", "AccountingDAO", "{E17FDDA8-6941-4DB7-A085-10B9211714EE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Personal", "Personal", "{4B0B6365-F803-4B58-A942-027EAB8BB19D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PersonalDAO", "PersonalDAO", "{4B0B6365-F803-4B58-A942-027EAB8BB19D}"
+	ProjectSection(SolutionItems) = preProject
+		UserDAO.cs = UserDAO.cs
+	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Purchase", "Purchase", "{7616D43A-73B0-4662-926B-07249F7B1B47}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PurchaseDAO", "PurchaseDAO", "{7616D43A-73B0-4662-926B-07249F7B1B47}"
+	ProjectSection(SolutionItems) = preProject
+		InputInvoiceDAO.cs = InputInvoiceDAO.cs
+		QuotationDAO.cs = QuotationDAO.cs
+	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stock", "Stock", "{ADCB6B2A-F376-4417-BE04-7543FBCCE8A7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StockDAO", "StockDAO", "{ADCB6B2A-F376-4417-BE04-7543FBCCE8A7}"
+	ProjectSection(SolutionItems) = preProject
+		ProductDAO.cs = ProductDAO.cs
+		SalesPriceDAO.cs = SalesPriceDAO.cs
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Views", "Views", "{E9B9A24C-791B-445E-9C0A-168E4661C55D}"
 EndProject
