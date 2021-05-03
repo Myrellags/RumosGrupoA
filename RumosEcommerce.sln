@@ -42,6 +42,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{DB527B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommerce", "Teste2\Ecommerce.csproj", "{1CD4D323-610A-4F4F-92F3-69BFFB2623A4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Diagrama", "Diagrama", "{5F638761-ECA1-4ED8-A44E-1855B2D115F3}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\OneDrive\Imagens\AcademiaRumos\Modulo2\DiagramaEcommerce.png = ..\..\..\OneDrive\Imagens\AcademiaRumos\Modulo2\DiagramaEcommerce.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,6 +70,7 @@ Global
 		{3A5BF368-D8D9-4308-BE29-81186B320E74} = {E9B9A24C-791B-445E-9C0A-168E4661C55D}
 		{DB527BF5-6B96-4C06-A3EE-24B94C8F3CBD} = {E9B9A24C-791B-445E-9C0A-168E4661C55D}
 		{1CD4D323-610A-4F4F-92F3-69BFFB2623A4} = {6E141223-1913-4C9A-B5CC-76B0863EDE1F}
+		{5F638761-ECA1-4ED8-A44E-1855B2D115F3} = {E9B9A24C-791B-445E-9C0A-168E4661C55D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8FD4867A-F225-4268-B28E-BDAAA33D8D6D}
