@@ -13,6 +13,7 @@ namespace Ecommerce.Accounting
         public int InvoiceToPayID { get; set; }
         [ForeignKey("InputInvoice")]
         public int InputInvoiceID { get; set; }
+        //public virtual InputInvoice InputInvoices { get; set; }
         public bool Status { get; set; }
 
         public Purchase.InputInvoice InputInvoice

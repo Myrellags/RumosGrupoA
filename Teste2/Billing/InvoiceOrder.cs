@@ -17,8 +17,9 @@ namespace Ecommerce.Billing
         public int InvoiceOrderID { get; set; }
         [ForeignKey("InvoicesReceivable")] 
         public int InvoicesReceivableID { get; set; }
+        //public virtual InvoicesReceivable InvoicesReceivables { get; set; }
         public string Status { get; set; }
-
+        
         public InvoicesReceivable InvoicesReceivable1
         {
             get => default;
