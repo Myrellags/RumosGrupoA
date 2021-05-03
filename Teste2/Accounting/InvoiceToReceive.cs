@@ -14,6 +14,7 @@ namespace Ecommerce.Accounting
         public int InvoiceToReceiveID { get; set; }
         [ForeignKey("InvoiceOrder")] 
         public int InvoiceOrderID { get; set; }
+        //public virtual InvoiceOrder InvoiceOrders { get; set; }
         public bool Status { get; set; }
 
         public Billing.InvoiceOrder InvoiceOrder

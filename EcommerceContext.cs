@@ -14,7 +14,6 @@ public class EcommerceContext : DBContext
 	public DbSet<SendOrder> SendOrders { get; set; }
 	public DbSet<ShoppingCar> ShoppingCars { get; set; }
 	public DbSet<UnlockedStock> UnlockedStocks { get; set; }
-	public DbSet<Person> People { get; set; }
 	public DbSet<User> Users { get; set; }
 	public DbSet<Category> Categorys { get; set; }
 	public DbSet<Inventory> Inventorys { get; set; }

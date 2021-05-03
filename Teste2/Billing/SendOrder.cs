@@ -15,7 +15,8 @@ namespace Ecommerce.Billing
         [Key]
         public int SendOrderID { get; set; }
         [ForeignKey("InvoiceOrder")]
-        public int InvoiceOrderID { get; set; } 
+        public int InvoiceOrderID { get; set; }
+        //public virtual InvoiceOrder InvoiceOrders { get; set; }
         public string Status { get; set; }
 
         public InvoiceOrder InvoiceOrder

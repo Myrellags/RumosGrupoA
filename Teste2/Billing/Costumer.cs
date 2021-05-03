@@ -15,6 +15,7 @@ namespace Ecommerce.Billing
         [ForeignKey("User")]
         [Required] 
         public int LoginUser { get; set; }
+        //public virtual User Users { get; set; }
         public string Delete { get; set; }
 
 

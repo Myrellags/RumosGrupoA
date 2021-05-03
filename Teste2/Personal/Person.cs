@@ -2,12 +2,11 @@
 
 namespace Ecommerce.Personal
 {
-    //[Index(nameof(NIF), IsUnique = true)]
     public class Person
     {
 
         #region "propriedades"
-        // public int PersonID { get; set; }
+        public int PersonID { get; set; }
         public string Surname { get; set; }
         public string Site { get; set; }
         public string NIF { get; set; }
@@ -28,11 +27,10 @@ namespace Ecommerce.Personal
         {
 
         }
-        public Person(int idPerson, string surname, string site, string nif, string cc, string note,
+        public Person(string surname, string site, string nif, string cc, string note,
                         string morada, string number, string district, string city, string country, string postalCode,
                         string socialMidia, string cellPhone)
         {
-            PersonID = idPerson;
             Surname = surname;
             Site = site;
             NIF = NIF;

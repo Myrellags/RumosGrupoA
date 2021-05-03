@@ -16,8 +16,10 @@ namespace Ecommerce.Billing
         public int ProductsShoppingCarID { get; set; }
         [ForeignKey("Product")] 
         public int ProductID { get; set; }
+        //public virtual Product Products { get; set; }
         [ForeignKey("ShoppingCar")] 
         public int ShoppingCarID { get; set; }
+        //public virtual ShoppingCar ShoppingCars { get; set; }
 
         public virtual ICollection<Stock.Product> Products { get; set; }
 

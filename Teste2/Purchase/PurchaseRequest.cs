@@ -13,6 +13,7 @@ namespace Ecommerce.Purchase
         public int PurchaseRequestID { get; set; }
         [ForeignKey("Quotation")]
         public int QuotationID { get; set; }
+        //public virtual Quotation Quotations { get; set; }
         public bool Okay { get; set; }
         [StringLength(60)] 
         public string MethodOfPayment { get; set; }

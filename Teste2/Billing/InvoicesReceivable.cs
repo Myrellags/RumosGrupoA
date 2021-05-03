@@ -15,12 +15,16 @@ namespace Ecommerce.Billing
         public int InvoicesReceivableID { get; set; }
         [ForeignKey("Customer")]
         public int CustomerID { get; set; }
+        //public virtual Customer Customers { get; set; }
         [ForeignKey("Product")]
         public int ProductID { get; set; }
+        //public virtual Product Products { get; set; }
         [ForeignKey("ShoppingCar")]
         public int ShoppingCarID { get; set; }
+        //public virtual ShoppingCar ShoppingCars { get; set; }
         [ForeignKey("MethodOfPayment")]
         public int MethodOfPaymentID { get; set; }
+        //public virtual MethodOfPayment MethodOfPayments { get; set; }
         public int AmountProduct { get; set; }
         public double PriceProduct { get; set; }
         public double WeightProduct { get; set; }
