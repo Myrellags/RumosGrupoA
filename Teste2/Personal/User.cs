@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Ecommerce.Personal
 {
     [Table("Users")]
-    [Index(nameof(LoginUser), IsUnique = true)]
+    //[Index(nameof(LoginUser), IsUnique = true)]
     public class User : Person
     {
         #region "PROPRIEDADES USER"

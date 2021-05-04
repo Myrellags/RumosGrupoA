@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Ecommerce.Personal
 {
@@ -6,19 +7,31 @@ namespace Ecommerce.Personal
     {
 
         #region "propriedades"
-        public int PersonID { get; set; }
+        [StringLength(60)] 
         public string Surname { get; set; }
         public string Site { get; set; }
+        [Required] //Dúvida: Se tornar este campo obrigatório, ele será exigido logo no cadastro de usuário?
+        [StringLength(11)] 
         public string NIF { get; set; }
+        [StringLength(15)] 
         public string CC { get; set; }
+        [StringLength(200)] 
         public string Note { get; set; }
+        [StringLength(100)] 
         public string Morada { get; set; }
+        [StringLength(10)] 
         public string Number { get; set; }
+        [StringLength(60)] 
         public string District { get; set; }
+        [StringLength(60)] 
         public string City { get; set; }
+        [StringLength(60)] 
         public string Country { get; set; }
+        [StringLength(10)] 
         public string PostalCode { get; set; }
+        [StringLength(60)] 
         public string SocialMidia { get; set; }
+        [StringLength(15)] 
         public string CellPhone { get; set; }
         #endregion
 
