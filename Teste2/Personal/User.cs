@@ -1,11 +1,12 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Personal
 {
     [Table("Users")]
-    //[Index(nameof(LoginUser), IsUnique = true)]
+    [Index(nameof(LoginUser), IsUnique = true)]
     public class User : Person
     {
         #region "PROPRIEDADES USER"
@@ -23,10 +24,6 @@ namespace Ecommerce.Personal
 
         }
 
-    public Index()
-        {
-
-        }
         public User(int userId, string loginUser, string passUser)
         {
             UserID = userId;
