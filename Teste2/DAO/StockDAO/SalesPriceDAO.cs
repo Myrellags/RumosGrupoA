@@ -1,23 +1,25 @@
-﻿using System;
+﻿using Ecommerce.Data;
+using Ecommerce.Stock;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 public class SalesPriceDAO
 {
-	private EcommerceContext contexto;
+	private BDEcommerce contexto;
 
-	public SalesPriceDAO(EcommerceContext contexto)
+	public SalesPriceDAO(BDEcommerce contexto)
 	{
 		this.contexto = contexto;
 	}
 	public IList<SalesPrice> Lista()
 	{
-		var lista = contexto.SalesPrice.ToList();
+		var lista = contexto.SalesPrices.ToList();
 		return lista;
 	}
-	public calculatePriceSell (double pricePurchaseProduct, double priceSellProduct)
+	public void calculatePriceSell (double pricePurchaseProduct, double priceSellProduct)
 	{
-		return contexto.Product
-					.Where(salesprice = priceSellProduct - pricePurchaseProduct)
-					.FirstOrDefault<>(ProfitMargin);
+		//return contexto.Product.Where(salesprice = priceSellProduct - pricePurchaseProduct).FirstOrDefault<>(ProfitMargin);
 	}
 
 

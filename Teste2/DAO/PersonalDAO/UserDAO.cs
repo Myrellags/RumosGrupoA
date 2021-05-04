@@ -1,20 +1,20 @@
-﻿using Ecommerce.Personal;
+﻿using Ecommerce.Data;
+using Ecommerce.Personal;
 using System;
+using System.Linq;
 
 public class UserDAO
 {
-    private EcommerceContext contexto;
+    private BDEcommerce contexto;
 
-    public UserDAO(EcommerceContext contexto)
+    public UserDAO(BDEcommerce contexto)
     {
         this.contexto = contexto;
     }
     
     public User Busca(string login, string password)
     {
-        return contexto.Users
-                    .Where(user => user.Nome.Equals(login) && user.Senha.Equals(password))
-                    .FirstOrDefault<Users>();
+        return contexto.Users.Where(user => user.LoginUser.Equals(login) && user.PassUser.Equals(password)).FirstOrDefault<User>();
     }
 
     public void Adiciona(User user)
