@@ -15,7 +15,6 @@
 
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="DAO\AccountingDAO\" />
     <Folder Include="DAO\BillingDAO\" />
     <Folder Include="Views\Home\" />
     <Folder Include="Views\Shared\" />
