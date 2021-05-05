@@ -10,6 +10,7 @@ namespace Ecommerce.Stock
         [ForeignKey("Product")]
         public int ProductID { get; set; }
         // public virtual Product Products { get; set; }
+        public int CategoryID { get; set; }
         public string NameProduct { get; set; }
 		public string DescriptionProduct { get; set; }
 		public string TypeProduct { get; set; }

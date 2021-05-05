@@ -31,11 +31,16 @@ public class ProductDAO
         return lista;
     }
     //Deletar
-    public void Remove(int id)
+    public static bool DeleteProduct(Product p)
     {
-        Product p = new Product() { ProductID = id };
-        contexto.Products.Remove(p);
-        contexto.SaveChanges();
+        bool result = false;
+        using (var db = new BDEcommerce())
+        {
+            db.Products.Remove(p);
+            result = (db.SaveChanges() == 1);
+        }
+
+        return result;
     }
     //Buscar produto por ID, chave primária
     public Product BuscaPorId(int id)
@@ -43,10 +48,27 @@ public class ProductDAO
         Product product = contexto.Products.Find(id);
         return product;
     }
-    //Update Produto
-    public void Atualiza(Product product)
+    //Buscar por categoria
+    public static List<Product> GetProducts(string tipo)
     {
-        contexto.Entry(product).State = EntityState.Modified;
-        contexto.SaveChanges();
+        List<Product> result = new List<Product>();
+        using (var db = new BDEcommerce())
+        {
+            result = db.Products.Where(f => f.CategoryProduct.Contains(tipo)).OrderBy(f => f.ProductID).ToList(); 
+            db.Products.OrderBy(f => f.CategoryProduct).ToList();
+        }
+        return result;
+    }
+    //Update Produto
+    public static bool UpdateProduct(Product p)
+    {
+        bool result = false;
+        using (var db = new BDEcommerce())
+        {
+            db.Products.Update(p);
+            result = (db.SaveChanges() == 1);
+        }
+
+        return result;
     }
 }
