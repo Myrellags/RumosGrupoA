@@ -17,7 +17,7 @@ namespace Ecommerce.Data
 		#region "Mapeando as tabelas do BD através das classes"
 
 		public DbSet<InvoiceToPay> InvoiceToPays { get; set; }
-		public DbSet<InvoiceToReceive> InvoiceToReceive { get; set; }
+		public DbSet<InvoiceToReceive> InvoiceToReceives { get; set; }
 		public DbSet<Costumer> Costumers { get; set; }
 		public DbSet<InvoiceOrder> InvoiceOrders { get; set; }
 		public DbSet<InvoicesReceivable> InvoicesReceivables { get; set; }

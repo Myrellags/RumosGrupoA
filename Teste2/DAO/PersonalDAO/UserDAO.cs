@@ -13,7 +13,7 @@ public class UserDAO
         this.contexto = contexto;
     }
     
-    public User Busca(string login, string password) // pergunta rogério - estas strings deveriam ter o mesmo nome que as strings da classe user ???
+    public User Busca(string login, string password) 
     {
         return contexto.Users.Where(user => user.LoginUser.Equals(login) && user.PassUser.Equals(password)).FirstOrDefault<User>();
     }

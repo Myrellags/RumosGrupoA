@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Ecommerce.DAO.AccountingDAO
 {
-    class InvoiceToReceiveDAO
+    class InvoiceToReceiveDAO // PEDIDOS RECEBIDOS 
     {
         private BDEcommerce contexto;
 
@@ -23,16 +23,19 @@ namespace Ecommerce.DAO.AccountingDAO
             List<InvoiceToReceive> result = new List<InvoiceToReceive>();
             using (var db = new BDEcommerce())
             {
-                result = db.InvoiceToReceive.FromSqlRaw("Select * From InvoiceToReceive order by Id").ToList();
+                result = db.InvoiceToReceives.FromSqlRaw("Select * From InvoiceToReceives order by Id").ToList();
             }
             return result;
         }
 
-        //procurar Open-Invoice/InvoiceOrders - tentei ligar à variavel status = true , na classe InvoiceOrders
-        public IList<InvoiceOrder> FiltraPorEstado(string Status)
+        //procurar InvoiceToReceive - /Invoice a receber ou Ordens a receber
+        public IList<InvoiceToReceive> FiltraPorEstado(string Status)
         {
-            IList<InvoiceOrder> lista = contexto.InvoiceOrders.Where(InvoiceOrder => InvoiceOrder.Status.Contains(Status)).ToList();
+            Status = "0";
+
+            IList<InvoiceToReceive> lista = contexto.InvoiceToReceives.Where(InvoiceToReceive => InvoiceToReceive.Status.Contains(Status)).ToList();
             return lista;
+
         }
     }
 }
