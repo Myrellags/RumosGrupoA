@@ -1,4 +1,5 @@
 ﻿using Ecommerce.Accounting;
+using Ecommerce.Billing;
 using Ecommerce.Data;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -17,7 +18,7 @@ namespace Ecommerce.DAO.AccountingDAO
         {
             this.contexto = contexto;
         }
-        
+        //procurar InvoiceToPay
         public static List<InvoiceToPay> GetInvoiceToPay()
         {
             List<InvoiceToPay> result = new List<InvoiceToPay>();
@@ -26,6 +27,12 @@ namespace Ecommerce.DAO.AccountingDAO
                 result = db.InvoiceToPays.FromSqlRaw("Select * From InvoiceToPay order by Id").ToList();
             }
             return result;
+        }
+        //procurar Open-Invoice/InvoiceOrders - tentei ligar à variavel status = true , na classe InvoiceOrders
+        public IList<InvoiceOrder> FiltraPorEstado(string Status)
+        {
+            IList<InvoiceOrder> lista = contexto.InvoiceOrders.Where(InvoiceOrder => InvoiceOrder.Status.Contains(Status)).ToList();
+            return lista;
         }
     }
 

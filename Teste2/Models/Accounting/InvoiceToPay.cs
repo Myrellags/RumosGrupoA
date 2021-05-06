@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Accounting
 {
-    [Table("InvoiceToPay")]
+    [Table("InvoiceToPays")]
     [Index(nameof(InvoiceToPayID), IsUnique = true)]
     public class InvoiceToPay // CONTAS A PAGAR
     {
