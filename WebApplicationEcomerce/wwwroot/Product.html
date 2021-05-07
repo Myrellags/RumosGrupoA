@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Formulário Cadastro de Produtos</title>
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!--<form asp-controller="Home" asp-action="Busca" method="get" class="inline-form>-->
+        <div class="container clearfix">
+            <select class="form-select" aria-label="Selecione uma categoria:">
+                <option selected>Open this select menu</option>
+                <option value="1">Casa</option>
+                <option value="2">Higiene</option>
+                <option value="3">Jardim</option>
+            </select>
+        </div>
+        <div class="text-center">
+            <label for="exampleInputPassword1" class="form-label">Nome do produto:</label>
+            <input type="text" class="form-control" id="nomeProduto">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Descrição do produto:</label>
+            <input type="text" class="form-control" id="descricaoProduto">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Tipo do produto:</label>
+            <input type="text" class="form-control" id="tipoProduto">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Peso do produto:</label>
+            <input type="text" class="form-control" id="pesoProduto">
+        </div>
+        <select class="form-select" aria-label="Selecione um armazém:">
+            <option selected>Open this select menu</option>
+            <option value="1">001 - Estoqque</option>
+            <option value="2">002 - Almoxarifado</option>
+            <option value="3">003 - Cozinha</option>
+        </select>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Preço do produto:</label>
+            <input type="number" class="form-control" id="pesoProduto">
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Marcar se o produto estiver descontinuado</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    <!--</form>-->
+</body>
+</html>
