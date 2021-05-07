@@ -15,7 +15,7 @@ namespace Ecommerce.Accounting
         [ForeignKey("InvoiceOrder")] 
         public int InvoiceOrderID { get; set; }
         //public virtual InvoiceOrder InvoiceOrders { get; set; }
-        public bool Status { get; set; }
+        public string Status { get; set; }
 
         public Billing.InvoiceOrder InvoiceOrder
         {
@@ -32,7 +32,7 @@ namespace Ecommerce.Accounting
         {
 
         }
-        public InvoiceToReceive(int idITR, int idIO, bool status)
+        public InvoiceToReceive(int idITR, int idIO, string status)
         {
             InvoiceToReceiveID = idITR;
             InvoiceOrderID = idIO;

@@ -8,7 +8,7 @@ namespace Ecommerce.Billing
 
 {
     [Table("InvoiceOrders")]
-    public class InvoiceOrder
+    public class InvoiceOrder // PEDIDOS EM ABERTO
     {
 
         #region "Propriedades"
