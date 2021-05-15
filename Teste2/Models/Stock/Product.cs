@@ -20,6 +20,7 @@ namespace Ecommerce.Stock
 		public double PricePurchaseProduct { get; set; }
 		public double PriceSellProduct { get; set; }
 		public string CategoryProduct { get; set; }
+        public byte image { get; set; }
 		public string Delete { get; set; }
 
         public Stock.Inventory Inventory
