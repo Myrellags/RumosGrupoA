@@ -1,6 +1,6 @@
 ﻿
 //Carregando combo categorias com dados da base
-document.getElementById("opcaoCategoria").innerHTML = function () {
+document.getElementById("opcaoCategoria").onselect = function () {
     fetch("/ProductDAO/GetProducts").then(respostaDoServidor => respostaDoServidor.json()).then(listaDeCategorias => mostrarCategorias(listaDeCategorias));
 };
 
