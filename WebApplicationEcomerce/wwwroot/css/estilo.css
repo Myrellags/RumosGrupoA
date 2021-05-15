@@ -11,9 +11,12 @@ body {
     font-size: 1.8rem;
 }
 
-.container {
-   /* padding: 0 1rem;*/
-   /* margin: 0 auto;*/
+.etiqueta {
+    background-color: #374785;
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
 }
 
 
