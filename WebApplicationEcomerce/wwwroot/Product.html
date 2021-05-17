@@ -8,6 +8,16 @@
     <script src="js/product.js"></script>
 </head>
 <body>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+
+    <button type="button" class="btn btn-link">Link</button>
     <form class="row g-3" novalidate action="/ProductDAO/Adiciona" method="post" onsubmit="return enviar();">
         <div class="col-md-4">
             <label for="validationCustom01" class="form-label">Nome</label>
@@ -53,23 +63,40 @@
         </div>
         <div class="col-md-3">
             <label for="validationCustom04" class="form-label">Categoria</label>
-            <select class="form-select" id="opcaoCategoria" required>
-                <option selected disabled value="">Escolha...</option>
-                <!--<option>celulares</option>  //pergunta a Zé Andrade porque não carrega
-    <option>informática e tablets</option>
-    <option>moda, beleza e perfumaria</option>
-    <option>eletrodomésticos e split</option>
-    <option>tv, áudio e home theater</option>
-    <option>móveis e decoração</option>
-    <option>móveis e decoração</option>
-    <option>brinquedos e bebês</option>
-    <option>eletroportáteis</option>
-    <option>esporte e suplementos</option>
-    <option>games, livros e filmes</option>
-    <option>produtos importados</option>
-    <option>para sua empresa</option>
-    <option>cartão, parceiros e serviços</option>-->
+            <select class="form-select" aria-label="Default select example">
+                <option selected disabled value="">Escolha...</option>-->
+                <option>celulares</option>
+                <option>informática e tablets</option>
+                <option>moda, beleza e perfumaria</option>
+                <option>eletrodomésticos e split</option>
+                <option>tv, áudio e home theater</option>
+                <option>móveis e decoração</option>
+                <option>móveis e decoração</option>
+                <option>brinquedos e bebês</option>
+                <option>eletroportáteis</option>
+                <option>esporte e suplementos</option>
+                <option>games, livros e filmes</option>
+                <option>produtos importados</option>
+                <option>para sua empresa</option>
+                <option>cartão, parceiros e serviços</option>
             </select>
+            <!--<select class="form-select" id="opcaoCategoria" required>
+                <option selected disabled value="">Escolha...</option>-->
+            <!--<option>celulares</option>
+            <option>informática e tablets</option>
+            <option>moda, beleza e perfumaria</option>
+            <option>eletrodomésticos e split</option>
+            <option>tv, áudio e home theater</option>
+            <option>móveis e decoração</option>
+            <option>móveis e decoração</option>
+            <option>brinquedos e bebês</option>
+            <option>eletroportáteis</option>
+            <option>esporte e suplementos</option>
+            <option>games, livros e filmes</option>
+            <option>produtos importados</option>
+            <option>para sua empresa</option>
+            <option>cartão, parceiros e serviços</option>-->
+            <!--</select>-->
             <div class="invalid-feedback">
                 Por favor, selecione uma opção válida.
             </div>
